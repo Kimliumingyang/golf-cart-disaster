@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "1.0",
+  "name": "The World's Worst Golf Course",
+  "lengthM": 1500,
+  "metersToPixels": 40,
+  "spawnX": 0,
+  "finishX": 1500,
+  "terrain": {
+    "baselineY": 0,
+    "heightPositiveUp": true,
+    "interpolation": "raisedCosineBump",
+    "samplingStepM": 0.35,
+    "notes": "height(x) sums raised cosine bumps; ensure C1 continuity, no sharp collision seam. Water/hole decals don't replace baseline unless specified.",
+    "bumps": [
+      {
+        "id": "tutorial_hill",
+        "start": 65,
+        "peak": 80,
+        "end": 95,
+        "heightM": 2.5
+      },
+      {
+        "id": "big_hill_1",
+        "start": 235,
+        "peak": 280,
+        "end": 325,
+        "heightM": 12
+      },
+      {
+        "id": "rough_1",
+        "start": 465,
+        "peak": 472,
+        "end": 480,
+        "heightM": 0.45
+      },
+      {
+        "id": "rough_2",
+        "start": 478,
+        "peak": 486,
+        "end": 495,
+        "heightM": 0.55
+      },
+      {
+        "id": "low_hill_trap",
+        "start": 650,
+        "peak": 665,
+        "end": 680,
+        "heightM": 1.3
+      },
+      {
+        "id": "runup_1",
+        "start": 850,
+        "peak": 863,
+        "end": 875,
+        "heightM": 1.5
+      },
+      {
+        "id": "runup_2",
+        "start": 882,
+        "peak": 896,
+        "end": 910,
+        "heightM": 3.0
+      },
+      {
+        "id": "mega_hill",
+        "start": 940,
+        "peak": 1000,
+        "plateauEnd": 1055,
+        "end": 1100,
+        "heightM": 18,
+        "shape": "raisedCosineRampPlateauFall"
+      }
+    ],
+    "visualDecals": [
+      {
+        "type": "golfHoleFake",
+        "x": 360,
+        "widthM": 0.45,
+        "depthM": 0.12,
+        "collision": "shallow surface depression only"
+      },
+      {
+        "type": "golfGreen",
+        "from": 1190,
+        "to": 1500
+      },
+      {
+        "type": "clubhouse",
+        "x": 1500
+      }
+    ]
+  },
+  "pickups": [
+    {
+      "id": "P1",
+      "x": 120,
+      "characterId": "rich",
+      "label": "RICH GUY",
+      "flag": true
+    },
+    {
+      "id": "P2",
+      "x": 400,
+      "characterId": "lady",
+      "label": "LADY",
+      "flag": true
+    },
+    {
+      "id": "P3",
+      "x": 780,
+      "characterId": "suit",
+      "label": "SUIT",
+      "flag": true
+    },
+    {
+      "id": "P4",
+      "x": 1190,
+      "characterId": "golfer",
+      "label": "GOLFER",
+      "flag": true
+    }
+  ],
+  "pickupRules": {
+    "rangeM": 3,
+    "maxAbsSpeedMps": 1,
+    "requiredStationarySec": 0.6,
+    "reseatDurationSec": 0.7,
+    "resumeSimAfterReseat": true,
+    "isCheckpoint": false
+  },
+  "events": [
+    {
+      "id": "golf_ball_1",
+      "type": "golfBall",
+      "triggerCarFrontX": 162,
+      "impactCorridorX": [
+        175,
+        195
+      ],
+      "warningSec": 1.2,
+      "diameterM": 0.9,
+      "speedMps": 18,
+      "trajectory": "scripted fixed arc until collision, then dynamic rigidbody",
+      "oneShot": true,
+      "sound": "whizz",
+      "note": "A fair window to accelerate ahead or stop behind. Never teleport ball onto occupant."
+    },
+    {
+      "id": "fake_hole",
+      "type": "fakeHole",
+      "x": 360,
+      "widthM": 0.45,
+      "depthM": 0.12,
+      "warning": "visible flag and black ellipse",
+      "note": "Safe to roll slowly; jumping is a tempting but unnecessary mistake."
+    },
+    {
+      "id": "pipe",
+      "type": "pipe",
+      "triggerCarFrontX": 510,
+      "x": 520,
+      "waterJetWidthM": 2,
+      "normalJetHeightM": 4.5,
+      "normalCycleSec": 3.5,
+      "normalActiveSec": 1.8,
+      "showChoice": true,
+      "choices": [
+        "FIX IT",
+        "NOPE"
+      ],
+      "repairSuccessProbability": 0.7,
+      "failedRepairFloodDurationSec": 3.2,
+      "failedRepairJetHeightM": 7,
+      "failedRepairPushMultiplier": 1.8,
+      "oneShot": true,
+      "pauseSimulationDuringChoice": true,
+      "scriptRepairAnimationSec": 1.4,
+      "note": "Repair RNG only; failure creates physics hazard but is not instant death. NOPE can time normal jet."
+    },
+    {
+      "id": "low_hill",
+      "type": "terrainChallenge",
+      "start": 650,
+      "end": 680,
+      "recommendedApproachSpeedMps": [
+        2,
+        4
+      ],
+      "note": "Quiet crest just after pipe relief; speed creates risk via upward acceleration."
+    },
+    {
+      "id": "mega_hill",
+      "type": "terrainChallenge",
+      "start": 940,
+      "end": 1100,
+      "recommendedApproachSpeedMps": [
+        9,
+        11
+      ],
+      "note": "Momentum to crest, careful braking before drop; no random eject."
+    },
+    {
+      "id": "goose",
+      "type": "gooseScare",
+      "triggerCarFrontX": 1266,
+      "appearX": 1270,
+      "runSpeedMps": 7,
+      "flapDurationSec": 1.2,
+      "honkCount": 2,
+      "collisionMask": "NONE",
+      "hasDamage": false,
+      "appliesForces": false,
+      "oneShot": true,
+      "note": "Non-hazard gag. After goose no harmful hazards to finish."
+    }
+  ],
+  "stationsVisual": {
+    "drawCheckeredFlag": true,
+    "showPassengerLabel": true,
+    "flagColor": [
+      "#263B2A",
+      "#FFFFFF"
+    ]
+  },
+  "finish": {
+    "x": 1500,
+    "requiredPeopleIncludingDriver": 5,
+    "requiresAllFourPickups": true,
+    "maxAbsSpeedMps": 2,
+    "stationarySec": 0.5,
+    "message": "ALL CUSTOMERS DELIVERED. SOMEHOW."
+  },
+  "failure": {
+    "lostCharacterRecoverySec": 0.6,
+    "upsideDownImmobileSec": 3,
+    "restartX": 0,
+    "retainCheckpoints": false
+  },
+  "dangerRegions": [
+    {
+      "name": "Golf Ball",
+      "from": 162,
+      "to": 195
+    },
+    {
+      "name": "Hill One",
+      "from": 235,
+      "to": 325
+    },
+    {
+      "name": "Pipe",
+      "from": 510,
+      "to": 545
+    },
+    {
+      "name": "Low Crest",
+      "from": 650,
+      "to": 680
+    },
+    {
+      "name": "Mega Hill",
+      "from": 940,
+      "to": 1100
+    }
+  ],
+  "safeFinalSegment": {
+    "from": 1300,
+    "to": 1500,
+    "noHarmfulEvents": true
+  }
+}

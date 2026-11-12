@@ -1,0 +1,445 @@
+{
+  "routes": [
+    {
+      "choice": "fix",
+      "seed": 1,
+      "state": "WIN",
+      "x": 1500.0183037232275,
+      "v": 0.0344118057146261,
+      "people": 5,
+      "pickups": 4,
+      "events": {
+        "ball": "launched",
+        "ballAt": 24.099999999999913,
+        "pipe": "fixed",
+        "pipeAt": 72.64999999999716,
+        "floodAt": 72.64999999999716,
+        "goose": true,
+        "gooseAt": 208.56666666672479,
+        "honk2": true
+      },
+      "logs": [
+        {
+          "event": "start",
+          "t": 0,
+          "x": 0,
+          "v": 0,
+          "people": 1,
+          "seed": 1
+        },
+        {
+          "event": "pickup-1",
+          "t": 16.867,
+          "x": 118.662,
+          "v": 0.273,
+          "people": 2,
+          "seed": 1
+        },
+        {
+          "event": "ball-warning",
+          "t": 24.1,
+          "x": 158.619,
+          "v": 7.508,
+          "people": 2,
+          "seed": 1
+        },
+        {
+          "event": "ball-launched",
+          "t": 25.317,
+          "x": 167.532,
+          "v": 7.325,
+          "people": 2,
+          "seed": 1
+        },
+        {
+          "event": "pickup-2",
+          "t": 56.317,
+          "x": 398.627,
+          "v": 0.317,
+          "people": 3,
+          "seed": 1
+        },
+        {
+          "event": "pipe-choice",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 1
+        },
+        {
+          "event": "pipe-repair",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 1
+        },
+        {
+          "event": "pipe-fixed",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 1015568748
+        },
+        {
+          "event": "pickup-3",
+          "t": 123.183,
+          "x": 778.65,
+          "v": 0.237,
+          "people": 4,
+          "seed": 1015568748
+        },
+        {
+          "event": "pickup-4",
+          "t": 192.367,
+          "x": 1188.595,
+          "v": 0.27,
+          "people": 5,
+          "seed": 1015568748
+        },
+        {
+          "event": "goose",
+          "t": 208.567,
+          "x": 1262.643,
+          "v": 4.913,
+          "people": 5,
+          "seed": 1015568748
+        },
+        {
+          "event": "win",
+          "t": 254.567,
+          "x": 1500.018,
+          "v": 0.034,
+          "people": 5,
+          "seed": 1015568748
+        }
+      ],
+      "parts": [
+        {
+          "id": "driver",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "rich",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "lady",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "suit",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "golfer",
+          "grip": true,
+          "outside": 0
+        }
+      ]
+    },
+    {
+      "choice": "fix",
+      "seed": 1234,
+      "state": "WIN",
+      "x": 1500.0055501097181,
+      "v": 0.08580357587925391,
+      "people": 5,
+      "pickups": 4,
+      "events": {
+        "ball": "launched",
+        "ballAt": 24.099999999999913,
+        "pipe": "flood",
+        "pipeAt": 72.64999999999716,
+        "floodAt": 72.64999999999716,
+        "goose": true,
+        "gooseAt": 208.5500000000581,
+        "honk2": true
+      },
+      "logs": [
+        {
+          "event": "start",
+          "t": 0,
+          "x": 0,
+          "v": 0,
+          "people": 1,
+          "seed": 1234
+        },
+        {
+          "event": "pickup-1",
+          "t": 16.867,
+          "x": 118.662,
+          "v": 0.273,
+          "people": 2,
+          "seed": 1234
+        },
+        {
+          "event": "ball-warning",
+          "t": 24.1,
+          "x": 158.619,
+          "v": 7.508,
+          "people": 2,
+          "seed": 1234
+        },
+        {
+          "event": "ball-launched",
+          "t": 25.317,
+          "x": 167.532,
+          "v": 7.325,
+          "people": 2,
+          "seed": 1234
+        },
+        {
+          "event": "pickup-2",
+          "t": 56.317,
+          "x": 398.627,
+          "v": 0.317,
+          "people": 3,
+          "seed": 1234
+        },
+        {
+          "event": "pipe-choice",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 1234
+        },
+        {
+          "event": "pipe-repair",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 1234
+        },
+        {
+          "event": "pipe-flood",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 3067928073
+        },
+        {
+          "event": "pickup-3",
+          "t": 123.017,
+          "x": 778.645,
+          "v": 0.363,
+          "people": 4,
+          "seed": 3067928073
+        },
+        {
+          "event": "pickup-4",
+          "t": 192.767,
+          "x": 1188.611,
+          "v": 0.292,
+          "people": 5,
+          "seed": 3067928073
+        },
+        {
+          "event": "goose",
+          "t": 208.55,
+          "x": 1262.62,
+          "v": 5.562,
+          "people": 5,
+          "seed": 3067928073
+        },
+        {
+          "event": "win",
+          "t": 254.267,
+          "x": 1500.006,
+          "v": 0.086,
+          "people": 5,
+          "seed": 3067928073
+        }
+      ],
+      "parts": [
+        {
+          "id": "driver",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "rich",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "lady",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "suit",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "golfer",
+          "grip": true,
+          "outside": 0
+        }
+      ]
+    },
+    {
+      "choice": "nope",
+      "seed": 1,
+      "state": "WIN",
+      "x": 1500.02008340486,
+      "v": -0.085755935695488,
+      "people": 5,
+      "pickups": 4,
+      "events": {
+        "ball": "launched",
+        "ballAt": 24.099999999999913,
+        "pipe": "nope",
+        "pipeAt": 72.64999999999716,
+        "goose": true,
+        "gooseAt": 207.3166666667238,
+        "honk2": true
+      },
+      "logs": [
+        {
+          "event": "start",
+          "t": 0,
+          "x": 0,
+          "v": 0,
+          "people": 1,
+          "seed": 1
+        },
+        {
+          "event": "pickup-1",
+          "t": 16.867,
+          "x": 118.662,
+          "v": 0.273,
+          "people": 2,
+          "seed": 1
+        },
+        {
+          "event": "ball-warning",
+          "t": 24.1,
+          "x": 158.619,
+          "v": 7.508,
+          "people": 2,
+          "seed": 1
+        },
+        {
+          "event": "ball-launched",
+          "t": 25.317,
+          "x": 167.532,
+          "v": 7.325,
+          "people": 2,
+          "seed": 1
+        },
+        {
+          "event": "pickup-2",
+          "t": 56.317,
+          "x": 398.627,
+          "v": 0.317,
+          "people": 3,
+          "seed": 1
+        },
+        {
+          "event": "pipe-choice",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 1
+        },
+        {
+          "event": "pipe-nope",
+          "t": 72.65,
+          "x": 506.716,
+          "v": 8.752,
+          "people": 3,
+          "seed": 1
+        },
+        {
+          "event": "pickup-3",
+          "t": 121.867,
+          "x": 778.617,
+          "v": 0.234,
+          "people": 4,
+          "seed": 1
+        },
+        {
+          "event": "pickup-4",
+          "t": 191.433,
+          "x": 1188.671,
+          "v": 0.315,
+          "people": 5,
+          "seed": 1
+        },
+        {
+          "event": "goose",
+          "t": 207.317,
+          "x": 1262.688,
+          "v": 5.234,
+          "people": 5,
+          "seed": 1
+        },
+        {
+          "event": "win",
+          "t": 253.35,
+          "x": 1500.02,
+          "v": -0.086,
+          "people": 5,
+          "seed": 1
+        }
+      ],
+      "parts": [
+        {
+          "id": "driver",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "rich",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "lady",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "suit",
+          "grip": true,
+          "outside": 0
+        },
+        {
+          "id": "golfer",
+          "grip": true,
+          "outside": 0
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "full 0–1500 m route: fixed",
+    "full 0–1500 m route: flood",
+    "full 0–1500 m route: nope",
+    "20 identical fixed-input runs through pickup #1 and golf-ball event",
+    "acceleration / braking measured",
+    "temporary departure has grace; actual physics loss reaches FAIL",
+    "one-click retry resets to 0 m, driver only, all events and flags clear",
+    "10 consecutive restarts keep identical body counts",
+    "keyboard, pause/resume and blur clear held input",
+    "mobile viewport and pointer cancel / GAS control",
+    "no browser runtime errors"
+  ],
+  "calibration": {
+    "zeroToEightSeconds": 3.8833333333333244,
+    "brakingStartSpeed": 8.360945850461235,
+    "brakingDistanceM": 4.615408922015273
+  }
+}

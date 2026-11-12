@@ -1,0 +1,4 @@
+import {level} from '../config/index.js';
+// A feedback controller pressing only the same GAS/BRAKE buttons as the player.
+// It never changes coordinates, velocities, pickups, hazards or outcomes.
+export function testDriver(g){let target=9;const x=g.x,v=g.speed;const station=level.pickups[g.pickups];let stop=station?.x??1501;if(g.events.pipe==='nope'&&x<516&&((g.elapsed-g.events.pipeAt)%3.5)<1.8)stop=Math.min(stop,513);const d=stop-x;if(d<0)target=Math.max(-1.7,d*.8);else target=Math.min(target,Math.sqrt(Math.max(0,d-1)*7));if(d<2&&d>-.2)target=Math.min(target,.4);if(x>640&&x<684)target=Math.min(target,3);if(x>268&&x<292)target=Math.min(target,5);if(x>988&&x<1075)target=Math.min(target,5);if(x>1075&&x<1110)target=Math.min(target,4);return {gas:v<target-.15,brake:v>target+.15,jump:false};}

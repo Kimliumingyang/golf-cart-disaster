@@ -1,0 +1,74 @@
+{
+  "style": "codeDrawnStickFigures",
+  "visual": "big circular heads, thin black/dark-green limbs, 2-3 recognizable accessories per character. Apparel drawn via vectors attached to physics bodies.",
+  "seatsOrderRearToFront": [
+    "golfer",
+    "suit",
+    "lady",
+    "rich",
+    "driver"
+  ],
+  "driverFrontFacingRight": true,
+  "seatLocalXOffsetsM": {
+    "golfer": -2.5,
+    "suit": -1.25,
+    "lady": 0,
+    "rich": 1.25,
+    "driver": 2.5
+  },
+  "characters": [
+    {
+      "id": "driver",
+      "seat": "driver",
+      "massKgDesign": 75,
+      "outfit": "plain green golf driver cap, simple vest",
+      "color": "#527B57",
+      "startOnBoard": true
+    },
+    {
+      "id": "rich",
+      "seat": "rich",
+      "massKgDesign": 105,
+      "outfit": "black top hat, gold tie, tiny monocle",
+      "color": "#D7B665",
+      "pickupX": 120
+    },
+    {
+      "id": "lady",
+      "seat": "lady",
+      "massKgDesign": 60,
+      "outfit": "pink wide brim hat, pink jacket, pearl necklace",
+      "color": "#DD92A0",
+      "pickupX": 400
+    },
+    {
+      "id": "suit",
+      "seat": "suit",
+      "massKgDesign": 78,
+      "outfit": "blue suit jacket, tie, sunglasses",
+      "color": "#6C9FCB",
+      "pickupX": 780
+    },
+    {
+      "id": "golfer",
+      "seat": "golfer",
+      "massKgDesign": 85,
+      "outfit": "green polo collar, white visor",
+      "color": "#81B16E",
+      "pickupX": 1190
+    }
+  ],
+  "reseat": {
+    "trigger": "successful pickup only",
+    "durationSec": 0.7,
+    "repositionAllSurvivors": true,
+    "clearLinearAndAngularVelocities": true,
+    "temporarilyDisableCollisions": true,
+    "neverRestoreLostCharacters": true
+  },
+  "hatPhysics": {
+    "enabled": true,
+    "decorativeOnly": true,
+    "losingHatDoesNotFail": true
+  }
+}

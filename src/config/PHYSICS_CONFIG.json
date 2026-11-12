@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0",
+  "designUnits": {
+    "length": "m",
+    "time": "s",
+    "mass": "kg DESIGN TARGET ONLY",
+    "pixelsPerMeter": 40,
+    "fixedStepHz": 60,
+    "gravityMps2": 15,
+    "conversionWarning": "Matter.js force/mass/gravity scales ARE NOT SI. Calibrate from observed accelerations and braking distances. Never copy N or kg directly as Matter engine parameters."
+  },
+  "car": {
+    "lengthM": 6.8,
+    "wheelbaseM": 5.3,
+    "chassisHeightM": 0.82,
+    "wheelDiameterM": 0.7,
+    "emptyCarMassKgDesign": 720,
+    "forwardMaxSpeedMps": 13,
+    "forwardAccelEmptyMps2": 4.2,
+    "brakeDecelMaxMps2": 6,
+    "coastDecelMps2": 0.65,
+    "reverseMaxSpeedMps": 2.5,
+    "suspensionTravelM": 0.32,
+    "suspensionFreqHz": 2.2,
+    "suspensionDampingRatio": 0.5,
+    "wheelGroundFrictionDesign": 1.2,
+    "chassisRestitution": 0.12,
+    "airTorqueControlRadps2": 0.12,
+    "notes": "Avoid hard-setting velocity every frame; drive wheel torque/longitudinal force with traction cap. Apply combined loads from seated bodies."
+  },
+  "ragdoll": {
+    "bodiesPerCharacter": 7,
+    "partNames": [
+      "head",
+      "torso",
+      "pelvis",
+      "leftArm",
+      "rightArm",
+      "leftLeg",
+      "rightLeg"
+    ],
+    "torsoRestitution": 0.08,
+    "headRestitution": 0.18,
+    "bodyBodyFrictionDesign": 0.45,
+    "seatFrictionDesign": 0.75,
+    "jointConstraints": "shoulder/elbow/hip/knee limits can use per-body approximations, with damping and no explosions",
+    "allowInterPassengerCollision": true,
+    "allowPassengerCarCollision": true,
+    "allowHeadButt": true,
+    "seatBreakaway": true,
+    "seatIsNotWelded": true,
+    "grabRail": {
+      "enabledPrototype": true,
+      "forceThresholdNDesign": 180,
+      "holdThresholdSec": 0.12,
+      "regrabCooldownSec": 0.5,
+      "note": "Optional physics-correct weak breakable grip; actual constraint rupture uses engine-native thresholds calibrated empirically."
+    },
+    "maxRecoverableOutsideSec": 0.6
+  },
+  "controls": {
+    "jump": {
+      "enabled": true,
+      "groundedOnly": true,
+      "cooldownSec": 1.5,
+      "targetAdditionalUpVelocityMps": 1.3,
+      "applyCarVelocityThroughImpulse": true
+    },
+    "gasKeys": [
+      "ArrowRight",
+      "KeyD"
+    ],
+    "brakeKeys": [
+      "ArrowLeft",
+      "KeyA"
+    ],
+    "jumpKeys": [
+      "Space"
+    ],
+    "pauseKeys": [
+      "KeyP",
+      "Escape"
+    ],
+    "restartKeys": [
+      "KeyR"
+    ]
+  },
+  "eventForces": {
+    "golfBall": {
+      "diameterM": 0.9,
+      "speedMps": 18,
+      "contactRestitutionDesign": 0.38,
+      "note": "Collision response must be dynamic; initial mass chosen to jolt cart without 100% forced fail."
+    },
+    "water": {
+      "jetWidthM": 2,
+      "normalHeightM": 4.5,
+      "cycleSec": 3.5,
+      "activeSec": 1.8,
+      "failedRepairPushMultiplier": 1.8,
+      "note": "Apply bounded upward force to overlapping rigid bodies, not instant teleport or death."
+    }
+  },
+  "calibrationCases": [
+    {
+      "case": "flatStart",
+      "expected": "0 to 8m/s in ~2.0–3.5s with driver only"
+    },
+    {
+      "case": "braking",
+      "expected": "9m/s to stop in ~7–14m depending on passengers/slope; no automatic ejection thresholds"
+    },
+    {
+      "case": "lowCrest",
+      "expected": "2–4m/s generally survivable; 8–11m/s may cause visible lift"
+    },
+    {
+      "case": "fakeHole",
+      "expected": "3–7m/s without jumping produces only mild shake"
+    },
+    {
+      "case": "finalLoad",
+      "expected": "all five characters affect chassis load but do not make the designed high hill impossible"
+    }
+  ],
+  "reproducibility": {
+    "fixedTimeStep": true,
+    "seededRngOnlyPipe": true,
+    "randomPerFrameBodyForce": false,
+    "resetClearsCollisionPairsAndTimers": true
+  }
+}
