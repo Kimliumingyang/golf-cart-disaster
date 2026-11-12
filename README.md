@@ -2,7 +2,7 @@
 
 完整可玩的 1500 m HTML5 横版驾驶游戏，在原 MVP 上迭代：四次停车接人、水管 70/30 修理决策、固定高尔夫球攻击、真假难辨的小球洞、50° / 60° 大坡、无害大鹅和五人终点判胜。失败仍从 0 m、仅司机重开。
 
-[参数修改记录](CHANGELOG_V0.8.md) · [验收结果](QA_REPORT.md) · [缺失美术清单](ART_REQUIREMENTS.md)
+[在线试玩 V0.8](https://kimliumingyang.github.io/golf-cart-disaster/GolfCartDisaster.html?v=0.8) · [参数修改记录](CHANGELOG_V0.8.md) · [验收结果](QA_REPORT.md) · [缺失美术清单](ART_REQUIREMENTS.md)
 
 ## 试玩 / 本地启动
 
