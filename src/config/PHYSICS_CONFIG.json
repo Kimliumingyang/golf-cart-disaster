@@ -15,8 +15,8 @@
     "chassisHeightM": 0.82,
     "wheelDiameterM": 0.7,
     "emptyCarMassKgDesign": 720,
-    "forwardMaxSpeedMps": 13,
-    "forwardAccelEmptyMps2": 4.2,
+    "forwardMaxSpeedMps": 20,
+    "forwardAccelEmptyMps2": 5.0,
     "brakeDecelMaxMps2": 6,
     "coastDecelMps2": 0.65,
     "reverseMaxSpeedMps": 2.5,
@@ -29,15 +29,19 @@
     "notes": "Avoid hard-setting velocity every frame; drive wheel torque/longitudinal force with traction cap. Apply combined loads from seated bodies."
   },
   "ragdoll": {
-    "bodiesPerCharacter": 7,
+    "bodiesPerCharacter": 11,
     "partNames": [
       "head",
       "torso",
       "pelvis",
-      "leftArm",
-      "rightArm",
-      "leftLeg",
-      "rightLeg"
+      "leftUpperArm",
+      "rightUpperArm",
+      "leftForearm",
+      "rightForearm",
+      "leftThigh",
+      "rightThigh",
+      "leftCalf",
+      "rightCalf"
     ],
     "torsoRestitution": 0.08,
     "headRestitution": 0.18,
@@ -88,9 +92,10 @@
   "eventForces": {
     "golfBall": {
       "diameterM": 0.9,
-      "speedMps": 18,
+      "speedMps": 34,
       "contactRestitutionDesign": 0.38,
-      "note": "Collision response must be dynamic; initial mass chosen to jolt cart without 100% forced fail."
+      "note": "Collision response must be dynamic; initial mass chosen to jolt cart without 100% forced fail.",
+      "matterMass": 180
     },
     "water": {
       "jetWidthM": 2,
@@ -104,19 +109,19 @@
   "calibrationCases": [
     {
       "case": "flatStart",
-      "expected": "0 to 8m/s in ~2.0–3.5s with driver only"
+      "expected": "0 to 8m/s in ~2.0\u20133.5s with driver only"
     },
     {
       "case": "braking",
-      "expected": "9m/s to stop in ~7–14m depending on passengers/slope; no automatic ejection thresholds"
+      "expected": "9m/s to stop in ~7\u201314m depending on passengers/slope; no automatic ejection thresholds"
     },
     {
       "case": "lowCrest",
-      "expected": "2–4m/s generally survivable; 8–11m/s may cause visible lift"
+      "expected": "2\u20134m/s generally survivable; 8\u201311m/s may cause visible lift"
     },
     {
       "case": "fakeHole",
-      "expected": "3–7m/s without jumping produces only mild shake"
+      "expected": "3\u20137m/s without jumping produces only mild shake"
     },
     {
       "case": "finalLoad",

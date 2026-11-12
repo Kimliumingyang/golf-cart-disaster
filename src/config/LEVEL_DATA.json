@@ -24,7 +24,8 @@
         "start": 235,
         "peak": 280,
         "end": 325,
-        "heightM": 12
+        "heightM": 12,
+        "maxSlopeDeg": 50
       },
       {
         "id": "rough_1",
@@ -68,7 +69,8 @@
         "plateauEnd": 1055,
         "end": 1100,
         "heightM": 18,
-        "shape": "raisedCosineRampPlateauFall"
+        "shape": "raisedCosineRampPlateauFall",
+        "maxSlopeDeg": 60
       }
     ],
     "visualDecals": [
@@ -76,8 +78,9 @@
         "type": "golfHoleFake",
         "x": 360,
         "widthM": 0.45,
-        "depthM": 0.12,
-        "collision": "shallow surface depression only"
+        "depthM": 0.18,
+        "collision": "shallow surface depression only",
+        "basinWidthM": 1.6
       },
       {
         "type": "golfGreen",
@@ -139,20 +142,25 @@
       ],
       "warningSec": 1.2,
       "diameterM": 0.9,
-      "speedMps": 18,
+      "speedMps": 34,
       "trajectory": "scripted fixed arc until collision, then dynamic rigidbody",
       "oneShot": true,
       "sound": "whizz",
-      "note": "A fair window to accelerate ahead or stop behind. Never teleport ball onto occupant."
+      "note": "A fair window to accelerate ahead or stop behind. Never teleport ball onto occupant.",
+      "matterMass": 180,
+      "launchHeightM": 8,
+      "launchDownSpeedMps": 8,
+      "removeOnFirstImpact": true
     },
     {
       "id": "fake_hole",
       "type": "fakeHole",
       "x": 360,
       "widthM": 0.45,
-      "depthM": 0.12,
+      "depthM": 0.18,
       "warning": "visible flag and black ellipse",
-      "note": "Safe to roll slowly; jumping is a tempting but unnecessary mistake."
+      "note": "Safe to roll slowly; jumping is a tempting but unnecessary mistake.",
+      "basinWidthM": 1.6
     },
     {
       "id": "pipe",

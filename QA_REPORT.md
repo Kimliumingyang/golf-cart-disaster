@@ -1,47 +1,74 @@
-# MVP verification — 12 November 2026
+# V0.8 验收报告
 
-## Build and automated acceptance
+在原 MVP 上修改，固定 60 Hz。测试针对生产构建，Chromium 桌面视口 1280×720；完整路线通过正常 GAS/BRAKE 输入连续驾驶，不传送、不授予站点或胜利。局部球洞场景只用于隔离测量，完整通关证据另列。
 
-`npm install`, `npm run dev`, `npm test`, `npm run build` and `npm run preview` all succeeded. Four Node tests cover the package configuration, all fixed pickup coordinates, terrain continuity/elevations, shallow fake hole, safe final segment, harmless goose and the acceleration-unit converter.
+## 构建与完整路线
 
-Chromium tested the actual production bundle at port 4173. The test driver presses the same GAS/BRAKE inputs as the player through every 60 Hz step; it never teleports, edits body velocities, grants pickups or bypasses victory. All four stops and every event occur in sequence from the initial driver-only start.
+`npm install` / `npm test` / `npm run package` 通过。5 项 Node 单测覆盖配置、单位转换、C1 地形、无害鹅与实测 50° / 60° 坡度。完整 E2E 与 V0.8 专项均通过，运行中无浏览器异常。
 
-- **FIX success**, seed 1: full route to WIN, all five people present, four pickups recorded, goose triggered.
-- **FIX flood**, seed 1234: full route to WIN, all five present; the 30% branch produces water rather than an automatic loss.
-- **NOPE**, seed 1: full route to WIN, all five present; normal fixed spray cycle continues.
-- Sample full-route duration before the final packaging pass: approximately **4:13** game time.
-- 20 resets with the same seed and identical feedback inputs through 2000 physics steps produced exactly identical serialized coordinates, speed, event state, pickup/ball event logs and grip status.
-- An upward impulse applied to a ragdoll in the QA harness demonstrated that the first short departure remains RUN; a genuinely unrecoverable departure subsequently reaches FAIL. This impulse is only a test fixture and never occurs as an artificial gameplay hazard.
-- Retry clicked from FAIL resets x to 0, driver only, zero pickups and empty event state in under 1.5 seconds.
-- Ten consecutive full resets preserve identical world body counts; old engines, constraints, hats, balls, timers and collision pairs are discarded.
-- Keyboard input, P pause/resume, and window blur clearing held input passed.
-- 844×390 mobile viewport, on-screen GAS and pointer cancellation passed. The automated pointer check uses Chromium pointer/mouse events; it is not evidence of physical touch hardware testing.
-- No browser runtime errors in the passing production suite.
+| 水管分支 | seed | 游戏内用时 | 终点 |
+|---|---:|---:|---|
+| fixed | 1 | 229.63 s | WIN，4 站、5 人、鹅事件齐全 |
+| flood | 1234 | 229.65 s | WIN，4 站、5 人、鹅事件齐全 |
+| nope | 1 | 230.98 s | WIN，4 站、5 人、鹅事件齐全 |
 
-Evidence: `docs/evidence/qa-results.json`, `docs/evidence/qa-fixed.png`, `docs/evidence/qa-flood.png`, `docs/evidence/qa-nope.png`, and `docs/evidence/qa-mobile.png`. Regenerate with `npm run test:e2e` while production preview runs. Screenshot and telemetry files are local, not uploaded to an external service.
+## 自然坐姿与 Ragdoll
 
-The single-file HTML also booted and drove in Chromium when served over HTTP, with zero runtime errors. Direct `file://` navigation could not be tested because this managed browser blocks local-file navigation by administrator policy.
+满载 5 人静止运行 10 s：每人 11 个刚体，上身最大偏斜 **2.86°**，最终均低于 2.3°；头部保持在骨盆上方约 44.9 px，膝盖真实弯曲，所有座位约束正常。
 
-## Physical calibration and limits
+初始坐姿与接客归位都通过几何、关节和有上限的力矩维持，不是锁定人物。球击测试出现约 1.06 rad 的相对车身偏转，证明碰撞后确实进入夸张 Ragdoll 运动。全程接客测试未出现归位爆炸或无故掉人。
 
-Measured in the production build, single driver, fixed 60 Hz:
+## 真实球击掀翻与躲避
 
-- 0→8 m/s: **3.88 s**, a little slower than the package's 2.0–3.5 s starting target.
-- Braking from **8.36 m/s**: **4.62 m**. This is stronger than the intended 7–14 m at 9 m/s. Kept as an MVP accessibility tradeoff so the four precise stops are controllable; `brakeMps2` is exposed for subsequent tuning.
-- First full-route automated pickup is roughly 17 s, slightly later than the design's 15 s target. First golf warning is roughly 24 s, within the 35 s target.
-- Route length, four pickup flags, seven bodies per person, graceful loss, full reset, fixed hazards, repair branches, collision-free goose, safe finish and five-person victory are implemented.
-- Real collisions, loose limbs, head contact, hats and breakable restraints are simulated. Anatomical elbow/knee chains and hard joint-angle limits are not implemented: seven bodies use single-segment arms/legs, damped distance joints and soft torso stabilization. This is a coarse ragdoll MVP, not an anatomical solver.
-- Wheel contacts use explicit grounded drive/brake forces and no tangential Matter contact friction. This avoids segment-contact drag; the suspension and terrain contact remain physical. Low-speed axle compliance is firm rather than a full tire model.
-- The water field is bounded and applies only to rigid bodies overlapping the jet. The three-branch E2E runs validate survival/continuation, not every possible high-speed passenger pose in flood water.
-- Collision-free goose is verified in configuration and implemented purely in the renderer; it has no body or force call.
+中速约 7 m/s 迎击，首个有效碰撞对象为 **cart**，相对接触速度 **44.31 m/s**。Matter 求解后的角速度从 **0.00084** 变为 **-0.07231 rad/tick**；随后车身达到 **156.83°**，已倒扣。测试到倒扣时即截取证据，不用后续动画冒充结果。
 
-## Not validated / further playtesting
+没有对车身施加脚本翻车力矩、直接改角度或调用预制翻车动画。球在本次接触求解完成后移除；之后球体数为 0，整场攻击只记录一次有效撞击。
 
-- No complete **human-driven** playthrough was performed. Complete continuous automated runs establish an achievable normal-input path; human enjoyment and difficulty remain subjective and unvalidated.
-- Physical phones/tablets, Safari/iOS, audio audibility/device routing, screen-reader interaction, and long-session memory profiling were not tested.
-- All qualitative ragdoll poses and low-crest risks were not statistically measured at every 3/5/7/9/11 m/s speed, nor were broad human success rates measured. There is no claim of perfect nonpenetration at arbitrary extreme velocities.
-- The supplied Figma PNGs informed palette, character accessories and cream/green cart design. Editable Figma layers/layout were not provided, so this is a programmer-drawn interpretation rather than an exact Figma reconstruction.
+减速至约 3 m/s 后刹停等待，以及第一站后提早加速至约 20 m/s，两种正常输入路线均让球首次撞地并继续驶过 210 m，无翻车、无掉人。
 
-## Milestone status
+## 球洞：下沉 / 悬挂 / 安全性
 
-M1–M5 playable behavior is implemented and exercised in the continuous full-route tests. M6 build, automated acceptance, restart/resource checks, documented controls and reproduction path are complete. The manual-play, physical-device, exhaustive pose and calibration-target qualifications above remain explicit rather than being marked as passed.
+| 接近速度 | 车身短促位移范围 | 悬挂压缩/伸长变化 | 结果 |
+|---:|---:|---:|---|
+| 3 m/s | 6.17 px | 2.13 px | 不跳跃，五人保留，继续至 375 m |
+| 7 m/s | 9.15 px | 3.34 px | 不跳跃，五人保留，继续至 375 m |
+| 13 m/s | 5.19 px | 1.71 px | 不跳跃，五人保留，继续至 375 m |
+| 20 m/s | 4.70 px | 1.71 px | 不跳跃，五人保留，继续至 375 m |
+
+车轮最低位置也有明确下沉。不同速度反馈不同，来自同一浅凹槽与悬挂物理；没有经过洞口就触发的强制抛人脚本，也没有只在球洞区域禁止死亡的特殊开关。
+
+## 素材替换
+
+- PNG、SVG 均通过工作台实际上传、预览和替换。
+- 替换前后逐项对比全部刚体的位置、顶点、质量和碰撞过滤配置，完全相同。
+- SVG 渲染副本移除脚本与外链，原文件下载仍与上传原文完全一致。
+- 连续替换保留两个历史原文件；刷新页面后，上传版本由 IndexedDB 恢复。
+- 历史版本恢复、项目默认回退、缺失美术 Markdown 导出均通过。
+- 项目素材来自之前提供的六张 PNG；原文件保存在 originals/，运行中不访问外部素材服务。
+
+## 校准与保留功能
+
+- 单司机平地 0→8 m/s：**1.88 s**；最高动力配置 20 m/s，本次平地样本 **19.81 m/s**。
+- 制动测试从 **19.67 m/s** 到停车：**24.10 m**，保留明显的惯性制动距离。
+- 20 次相同初始状态与输入脚本的坐标、速度、事件、日志和约束状态完全一致。
+- 真正离车测试有恢复窗口，随后 FAIL；一次点击 Retry 回到 0 m，仅司机，事件和旗帜清空。
+- 10 次连续重开，刚体数量相同；暂停、键盘、窗口失焦清输入和移动视口 pointer cancel 通过。
+
+## 证据与复现
+
+- [专项数据](docs/evidence/v08-results.json)
+- [完整三分支数据](docs/evidence/qa-results.json)
+- [满载自然坐姿](docs/evidence/v08-seated.png)
+- [真实球击倒扣](docs/evidence/v08-ball-flip.png)
+- [素材工作台](docs/evidence/v08-art-garage.png)
+
+运行命令和保守通关操作见 README。`?debug=1` → DRIVE → T 可观察完整正常按钮走查；水管对话仍需选择。
+
+## 未验证与限制
+
+- 未进行完整真人手动通关、真实手机/平板、Safari/iOS、WebAudio 实际听感与长时间内存分析；自动化通关不能代替人类乐趣和难度评价。
+- 整人 PNG 的自动分片是原型级蒙皮，复杂服饰或不同构图可能出现接缝；提供分离肢体或在槽位单独上传，可获得更精确的对齐。
+- 上传只保存于当前站点的本地浏览器，不是多人共享的服务器素材库；发布给所有玩家需更新项目目录与 manifest。
+- 角色内部自碰撞关闭以稳定关节；人-人、人-车、角色-地形碰撞保留。极端速度下不宣称完全无穿透。
+- 高尔夫球质量 180 是与车身 100 配套的引擎夸张标定，不是现实 golf ball 质量。
+- 单文件可离线打包；托管环境浏览器禁止 file://，因此本环境以静态 HTTP 和离线请求拦截验证，不宣称完成本地文件协议测试。

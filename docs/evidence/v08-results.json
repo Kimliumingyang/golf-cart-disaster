@@ -1,0 +1,172 @@
+{
+  "version": "0.8.0",
+  "checks": [
+    "five articulated seated people remain upright with bent knees for 10 seconds",
+    "hole: 3 m/s, real wheel dip/suspension movement, five people retained",
+    "hole: 7 m/s, real wheel dip/suspension movement, five people retained",
+    "hole: 13 m/s, real wheel dip/suspension movement, five people retained",
+    "hole: 20 m/s, real wheel dip/suspension movement, five people retained",
+    "brake-and-wait dodges the same projectile",
+    "normal driving input causes a native collision that overturns the entire cart; ball disappears once",
+    "early acceleration dodges the same projectile",
+    "SVG upload previews, strips executable/external content, preserves raw original, leaves all physics unchanged",
+    "PNG replacement preserves both originals and history",
+    "uploaded art survives reload through IndexedDB",
+    "historical version restore and project-default fallback work",
+    "missing-art checklist exports successfully"
+  ],
+  "holes": [
+    {
+      "speed": 3,
+      "state": "RUN",
+      "x": 375.0202603542436,
+      "people": 5,
+      "allGrips": true,
+      "chassisMovementPx": 6.174759011436116,
+      "suspensionMovementPx": 2.1253178532621106,
+      "wheelMax": -4.196846624289807
+    },
+    {
+      "speed": 7,
+      "state": "RUN",
+      "x": 375.0690722012388,
+      "people": 5,
+      "allGrips": true,
+      "chassisMovementPx": 9.145185743798116,
+      "suspensionMovementPx": 3.3420679094411057,
+      "wheelMax": -7.316730857594456
+    },
+    {
+      "speed": 13,
+      "state": "RUN",
+      "x": 375.1938667250607,
+      "people": 5,
+      "allGrips": true,
+      "chassisMovementPx": 5.189448858427362,
+      "suspensionMovementPx": 1.709596688858845,
+      "wheelMax": -10.372121125471871
+    },
+    {
+      "speed": 20,
+      "state": "RUN",
+      "x": 375.2060495925467,
+      "people": 5,
+      "allGrips": true,
+      "chassisMovementPx": 4.701356408555547,
+      "suspensionMovementPx": 1.7067314887971747,
+      "wheelMax": -10.623056331325698
+    }
+  ],
+  "balls": [
+    {
+      "target": 3,
+      "state": "RUN",
+      "x": 210.03627542929652,
+      "maxAngle": 0.24946087914172435,
+      "maxLean": 0.4573821135686876,
+      "upsideDown": false,
+      "zeroAfterImpact": true,
+      "impactCount": 1,
+      "firstImpact": {
+        "t": 27.899999999999697,
+        "target": "terrain",
+        "x": 174.59999999999974,
+        "relativeSpeedMps": 38.01315561749686,
+        "carAngleBefore": 0.0009949579542509167,
+        "carOmegaBefore": 0.0002044342323764091,
+        "carAngleAfter": 0.001027077074669724,
+        "carOmegaAfter": 0.00033575154109329
+      }
+    },
+    {
+      "target": 7,
+      "state": "RUN",
+      "x": 172.543439948604,
+      "maxAngle": 2.73714411177824,
+      "maxLean": 1.0581876005598199,
+      "upsideDown": true,
+      "zeroAfterImpact": true,
+      "impactCount": 1,
+      "firstImpact": {
+        "t": 23.933333333333255,
+        "target": "cart",
+        "x": 174.59999999999974,
+        "relativeSpeedMps": 44.31228632373372,
+        "carAngleBefore": 0.0034897604475967103,
+        "carOmegaBefore": 0.0008448609618522047,
+        "carAngleAfter": 0.003002352408748337,
+        "carOmegaAfter": -0.07230755430022508
+      }
+    },
+    {
+      "target": 20,
+      "state": "RUN",
+      "x": 210.08142148729092,
+      "maxAngle": 0.24946087914172435,
+      "maxLean": 0.36468526742260887,
+      "upsideDown": false,
+      "zeroAfterImpact": true,
+      "impactCount": 1,
+      "firstImpact": {
+        "t": 21.81666666666671,
+        "target": "terrain",
+        "x": 174.59999999999974,
+        "relativeSpeedMps": 38.01315561749686,
+        "carAngleBefore": -0.005500737101457656,
+        "carOmegaBefore": -0.0006440537561051593,
+        "carAngleAfter": -0.005280157810811439,
+        "carOmegaAfter": -0.0003745026371445061
+      }
+    }
+  ],
+  "pose": {
+    "state": "RUN",
+    "maxTorsoLean": 0.050001146336270695,
+    "people": [
+      {
+        "id": "driver",
+        "bodies": 11,
+        "torsoLean": 0.03290767866484731,
+        "headAbovePelvis": 44.9096611617383,
+        "kneeBend": 1.160126527434121,
+        "grip": true
+      },
+      {
+        "id": "rich",
+        "bodies": 11,
+        "torsoLean": 0.03521164963576284,
+        "headAbovePelvis": 44.90316055748001,
+        "kneeBend": 1.1236823021647853,
+        "grip": true
+      },
+      {
+        "id": "lady",
+        "bodies": 11,
+        "torsoLean": 0.035017621788170854,
+        "headAbovePelvis": 44.908201718322445,
+        "kneeBend": 1.0731438151296757,
+        "grip": true
+      },
+      {
+        "id": "suit",
+        "bodies": 11,
+        "torsoLean": 0.03844596812172034,
+        "headAbovePelvis": 44.898862771768734,
+        "kneeBend": 0.8917461163808611,
+        "grip": true
+      },
+      {
+        "id": "golfer",
+        "bodies": 11,
+        "torsoLean": 0.038862628501461945,
+        "headAbovePelvis": 44.89696216650712,
+        "kneeBend": 0.8914976185256611,
+        "grip": true
+      }
+    ]
+  },
+  "calibration": {
+    "timeTo8": 1.8833333333333315,
+    "maxFlatSpeedSample": 19.811265422006386
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "version": "0.8.0",
+  "assets": [
+    {
+      "slot": "characters.rich",
+      "path": "assets/characters/rich.png",
+      "name": "无脸绅士提着金色怀表 2.png",
+      "originalPath": "assets/originals/无脸绅士提着金色怀表 2.png"
+    },
+    {
+      "slot": "characters.lady",
+      "path": "assets/characters/lady.png",
+      "name": "Group 34.png",
+      "originalPath": "assets/originals/Group 34.png"
+    },
+    {
+      "slot": "characters.suit",
+      "path": "assets/characters/suit.png",
+      "name": "无墨镜的扁平风商务角色 4.png",
+      "originalPath": "assets/originals/无墨镜的扁平风商务角色 4.png"
+    },
+    {
+      "slot": "characters.golfer",
+      "path": "assets/characters/golfer.png",
+      "name": "高尔夫角色UI资产套件 3.png",
+      "originalPath": "assets/originals/高尔夫角色UI资产套件 3.png"
+    },
+    {
+      "slot": "vehicles.cart",
+      "path": "assets/vehicles/cart.png",
+      "name": "极简豪华绿色王冠敞篷接驳车 3.png",
+      "originalPath": "assets/originals/极简豪华绿色王冠敞篷接驳车 3.png",
+      "wheelCutouts": [
+        [
+          -93,
+          -38,
+          21
+        ],
+        [
+          88,
+          -38,
+          21
+        ]
+      ]
+    },
+    {
+      "slot": "environment.background",
+      "path": "assets/environment/background.png",
+      "name": "Frame 2.png",
+      "originalPath": "assets/originals/Frame 2.png"
+    }
+  ]
+}

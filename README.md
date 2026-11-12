@@ -1,97 +1,96 @@
-# Golf Cart Disaster! — playable HTML5 MVP
+# Golf Cart Disaster! — V0.8
 
-A complete 1500 m driving game: menu → four pickups → pipe decision → harmless goose → five-person finish, or physics loss → Retry from 0 m. Original development package read in full; its JSON is retained in `src/config/`. Figma PNG exports were used as visual references only. All runtime art is Canvas/CSS; there are no downloaded art assets, runtime CDNs, accounts, ads or network services.
+完整可玩的 1500 m HTML5 横版驾驶游戏，在原 MVP 上迭代：四次停车接人、水管 70/30 修理决策、固定高尔夫球攻击、真假难辨的小球洞、50° / 60° 大坡、无害大鹅和五人终点判胜。失败仍从 0 m、仅司机重开。
 
-## Play the ready-built version
+[参数修改记录](CHANGELOG_V0.8.md) · [验收结果](QA_REPORT.md) · [缺失美术清单](ART_REQUIREMENTS.md)
 
-Download [`GolfCartDisaster.html`](GolfCartDisaster.html) using GitHub’s **Download raw file** button, then open the saved file in a modern browser. It includes the whole game and needs no installation. GitHub’s normal file viewer shows source code, so download the HTML to play. For devices that block local HTML, use the local server below.
+## 试玩 / 本地启动
 
-[QA report](QA_REPORT.md) · [Test evidence](docs/evidence/qa-results.json)
-
-## Run
-
-Node 20.19+ or Node 22.12+:
+直接下载仓库里的 [`GolfCartDisaster.html`](GolfCartDisaster.html)（GitHub 文件页右上角 **Download raw file**），保存后用现代浏览器打开。它内嵌完整游戏和项目美术，不需要安装依赖。GitHub 普通文件页只显示源代码；下载后才会执行游戏。托管环境禁止本地 HTML 时，用下面的服务器方式运行。
 
 ```sh
 npm install
 npm run dev
 ```
 
-Open the printed local URL. Production:
+生产构建与单文件打包：
 
 ```sh
 npm run build
 npm run preview
+npm run package
 ```
 
-[`GolfCartDisaster.html`](GolfCartDisaster.html) is also a self-contained playable build: open it directly in a modern browser, no installation or server needed. `dist/` is the production web build.
+`dist/` 可部署到静态服务器。`npm run package` 会额外生成内嵌美术的 `GolfCartDisaster.html`，以及 `work/package/index.html`。Pages 发布分支使用此单文件，避免 GitHub 项目子路径破坏资源 URL。远程素材服务和账号都不是游玩依赖。
 
-## Controls and a full run
+## 控制与完整路线
 
-- D / Right or hold GAS: drive. A / Left or BRAKE: brake, then reverse. Release GAS to coast.
-- Space / HOP: small grounded jump, 1.5 s cooldown. Hopping is optional and often a poor idea.
-- P / Escape: pause, resume and volume. R: full restart. ♪: mute.
-- Stop within ±3 m of each flag at 120, 400, 780 and 1190 m. Hold below 1 m/s for 0.6 s. All aboard become briefly, suspiciously respectable.
-- At roughly 160 m, watch the golfer wind up and the arc warning. Brake behind the ball or drive through its fixed corridor.
-- Drive up the 235–325 m hill; brake across its crest. Roll over the tiny hole at 360 m; no jump needed.
-- Pipe at 520 m: FIX IT has 70% success, or NOPE lets you wait for the regular spray cycle. Failed repair creates a physical water jet; it does not cause an automatic loss.
-- Brake before the small 650–680 m hill to about 3 m/s.
-- Use gas on the 940–1000 m climb, ease back across the plateau, and brake before descending at 1055 m.
-- After the last pickup the goose only honks. Drive to the clubhouse and stop at 1500 m, below 2 m/s for 0.5 s.
-- Lose a person irrecoverably or remain overturned and immobile for 3 s: the whole run restarts, with driver only. A hat is not a person.
+- **D / → / GAS**：油门；**A / ← / BRAKE**：刹车，停稳后可倒车。
+- **Space / HOP**：接地小跳，1.5 秒冷却。球洞不需要跳跃。
+- **P / Esc**：暂停；**R**：整局重开；**♪**：静音；暂停面板可调音量。
+- **ART**：素材工作台，驾驶中打开会暂停，关闭后恢复原来的驾驶状态。
+- 在 **120 / 400 / 780 / 1190 m** 的旗帜附近 ±3 m，速度低于 1 m/s 持续 0.6 秒即可接人。全员恢复自然坐姿，四面 HUD 旗依次点亮。
+- 球攻击：看挥杆与真实轨迹预警。减速到约 3 m/s，听到 FORE 后刹停等待，是安全路线；第一站后果断加速也能抢先通过。中速迎面撞上可能把整车掀翻。
+- 第一大坡仍在 **235–325 m** 区间，实际陡坡集中在坡顶两侧，最大坡度 **50°**。保守路线：接近 255 m 就减到约 2.5 m/s。
+- **360 m** 是浅球洞：轮胎会下沉，悬挂和车身有短促颠簸，正常驶过即可。
+- **520 m** 水管选择 FIX IT 或 NOPE；修坏会喷大水，不直接判输。NOPE 可观察固定周期再通过。
+- **650–680 m** 小坡约 3 m/s 更稳。
+- **940–1100 m** 超高坡最大 **60°**，平顶仍在 1000–1055 m。爬坡用油门，坡顶和下坡提前刹车；9 m/s 以上冲顶的腾空风险明显增加。
+- **1270 m** 大鹅只有视觉和叫声，没有碰撞体或推力。后段没有新增攻击。
+- 五人齐全后，在 **1500 m** 附近降到 2 m/s 以下保持 0.5 秒获胜。
 
-## Architecture / project tree
+## 上传与替换美术
 
+`public/assets/` 分类为 `ui/`、`characters/`、`vehicles/`、`environment/`、`effects/`，另有 `originals/` 保存之前提供的六张原始 PNG，字节未修改。`manifest.json` 声明项目默认素材。
+
+点击 **ART** → 选择分类与位置 → 上传 PNG / SVG。工作台提供透明底预览、文件尺寸、历史版本恢复、原文件下载、恢复项目默认，以及美术需求 Markdown 导出。
+
+优先级：**本地上传 > 项目 manifest 美术 > 代码占位**。素材按槽位等比适配，环境背景按比例铺满裁切；更换素材只修改渲染层，不创建、缩放或重建任何碰撞体。角色的头、躯干、骨盆、上下臂、大小腿贴图跟随对应物理刚体运动。整人 PNG 也可按预设区域分片；专用部件贴图可以覆盖自动分片。
+
+上传保存在当前浏览器、当前站点的 **IndexedDB**，保留原文件与历史版本；不是服务器上传接口。要让所有玩家使用新美术，把原文件加入 `public/assets/` 并更新 manifest，再构建和发布。当前浏览器禁用存储时会明确提示仅本次页面有效。
+
+每文件最大 8 MB，解码图像最多 1600 万像素、边长最多 8192。SVG 渲染副本移除脚本、事件属性、外链资源和不支持的主动标签；下载原文件保留原始字节。
+
+## 物理架构与 V0.8 变化
+
+- Matter.js 原生刚体 + Canvas/CSS；保留原状态机、地图、拾取和重开框架。
+- 40 px/m、固定 60 Hz；显式把 m/s² 转为 Matter 的 px/ms² 力。刚体质量使用引擎标定值，非直接 SI kg。
+- 动力目标 **5.0 m/s² / 20 m/s**。轮胎牵引、上坡助力、下坡制动均施加真实力，接地按路面法线判断；不逐帧覆盖驾驶速度。跳跃仅施加原有小冲量。
+- 每人从 7 个刚体升级为 **11 个刚体**，加入真实肘、膝关节。自然坐姿由初始几何、阻尼关节、可断开的座位约束和有上限的姿态力矩维持。真实碰撞削弱短时间姿态支撑，让人物翻滚后尝试恢复；没有逐帧随机力。
+- 座位设计坐标保持独立，不再把同一个对象传给 Matter 的可变约束锚点。创建关节时正确转换初始旋转，避免坡道误判离座。
+- 高尔夫球 **34 m/s**、引擎质量 **180**（车身 100），有可见的前支柱接触点。球在 Matter 完成首次碰撞求解之后移除，既保留接触冲量又避免反复撞击；没有额外翻车力矩、直接设车身角度或翻车动画。
+- 球洞可见黑洞仍小，周围使用 **1.6 m 宽、0.18 m 深** 的浅凹槽，配合柔化悬挂产生轮胎下沉和短促压缩。没有“经过就失去乘客”的脚本，也没有针对球洞的无敌开关。
+- 美术库与物理模块独立；上传、预览、存储、换肤不参与求解。
+
+## 项目结构
+
+```text
+public/assets/        分类项目素材、manifest、原始文件
+src/assets/           素材库、SVG 清理、IndexedDB、工作台、分片映射
+src/config/           地图、物理、角色 JSON；tuning.js 引擎标定
+src/physics/          车、悬挂、11 刚体人物、姿态与碰撞处理
+src/world/            平滑陡坡、浅球洞、球 / 水管 / 鹅
+src/game/             完整状态机与局部遥测
+src/render/           Canvas 向量回退和素材渲染
+src/ui/               HUD、输入、模态面板
+src/debug/            只按正常按钮的可复现驾驶脚本
+scripts/              单文件打包、美术清单生成
+tests/                配置 / 地形单测、完整路线与 V0.8 验收
 ```
-index.html                 accessible DOM HUD, modal and pointer controls
-src/main.js                accumulator, rendering and 60 Hz fixed stepping
-src/config/                original JSON, validation, explicit unit conversion, tuning.js
-src/physics/world.js       Matter world, triangular axle suspension, cart, seven-part people
-src/world/terrain.js       raised-cosine terrain, shallow hole, streamed overlapping collision strips
-src/world/events.js        visible ball, repair RNG, physical water force field, visual-only goose
-src/game/game.js           states, pickups, loss grace, restart, five-person finish, local telemetry
-src/render/canvas.js       vector art separated from simulation; all parts follow physics transforms
-src/ui/                    keyboard / pointer / blur handling, HUD and dialogs
-src/debug/driver.js        repeatable button-only feedback test driver
-src/style.css              responsive desktop / touch UI
-tests/                     config, terrain and Chromium production E2E tests
-QA_REPORT.md               actual results and limitations
-```
 
-Physics uses 40 px/m; velocity converts Matter px/60 Hz tick to m/s. Acceleration converts m/s² to px/ms² before applying force. The 100-unit chassis and character masses preserve designed relative loads without treating Matter mass as SI kg. Axles use two diagonal soft distance constraints each; longitudinal grounded traction and braking are explicit forces, with bounded engine assistance uphill. Wheel contact friction is zero because Matter's friction over streamed segment contacts caused excessive drivetrain drag; the grounded traction model supplies propulsion/braking. There is no per-frame velocity governor or ragdoll jitter. Jump alone applies an impulse through velocity change.
-
-Each person has seven colliding rigid bodies, damped joints, a weak breakable pelvis/rail restraint, and a bounded torso muscle torque. They collide with the cart and each other; self-collision is disabled per person for stability. The joint limits are distance constraints plus soft torso stabilization, not anatomical elbow/knee joints. Arms and legs each use one segment as specified by the seven-body budget. A broken restraint can regrab when the pelvis returns close enough. People may leave seats, hang, collide and return before the 0.6 s irrecoverable-loss timer. Decor hats are separate physics bodies. Pickup recreation clears body momentum and constraints without resurrecting a lost run.
-
-Terrain is streamed around the vehicle, including reverse travel, avoiding thousands of distant rigid bodies. Adjacent segments overlap to prevent exposed collision seams. Camera and accessories can be replaced independently of the physics.
-
-## Tests / debug
+## 测试与调试
 
 ```sh
 npm test
-npm run build
-npm run preview -- --port 4173
-# in another terminal; installed system Chromium by default
-npm run test:e2e
-# override if needed:
-CHROMIUM_PATH=/path/to/chromium GAME_URL='http://localhost:4173/?debug=1' npm run test:e2e
+npm run package
+npm run preview -- --port 4174
+# 另一终端
+GAME_URL='http://localhost:4174/?debug=1' npm run test:e2e
+npm run test:v08
 ```
 
-Open `/?debug=1`: H collision outlines, T fixed feedback test driver, L half-speed, R whole-run reset. Debug includes coordinates, speed, angle, angular velocity, seed, live bodies, seat displacement, grip/loss timers and event state. `window.golf` exposes snapshot, fixed steps and local telemetry. No test driver or debugging UI is exposed without the URL flag. Test driver only presses GAS/BRAKE and never teleports, edits velocity, grants pickups or bypasses win conditions. Pipe choice remains an explicit dialog. The test runner sets a known seed to cover both probability outcomes. Records stay local.
+浏览器测试默认 `/usr/bin/chromium`，可用 `CHROMIUM_PATH` 指向本机 Chromium/Chrome。依赖 Playwright；真实手机和音频听感仍需人工验证。
 
-For a reproducible full test: launch debug, press DRIVE, press T, choose FIX IT or NOPE when prompted. It will drive the continuous route and stop at all four flags and the finish. There is no teleport or checkpoint. Automated evidence in `docs/evidence/qa-results.json` includes three complete production runs and their event logs.
+`?debug=1` 显示坐标、速度、坡度、角速度、乘员 / 约束与事件状态。**H** 碰撞轮廓、**T** 正常按钮自动走查、**L** 半速。调试面板不会授予胜利；完整路线测试不传送、不跳过站点、不修改速度。球洞等专项测试只用局部初始场景做隔离测量，不能替代完整路线测试。
 
-## Five priority tuning parameters
-
-In `src/config/tuning.js`:
-
-1. `motorAccelMps2` / `brakeMps2`: observable response and stopping distance.
-2. `seatStiffness`: how readily bodies move around inside the cart.
-3. `seatBreakDistancePx` / `seatBreakSeconds`: grip failure from actual stretch, never a speed threshold.
-4. `uphillAssistMps2`: loaded climbing torque without changing terrain or gravity.
-5. `suspensionStiffness`: axle compliance, landing bounce and contact stability.
-
-Terrain crest curvature remains editable in `LEVEL_DATA.json`; pipe probability and event timing use the design data, with engine-native water force calibrated separately.
-
-## GitHub build checks
-
-Each push and pull request runs dependency installation, configuration/terrain tests, and the production build. The GitHub Actions run attaches a downloadable `golf-cart-disaster-web-build` artifact. Full Chromium gameplay tests are documented above and run separately; CI does not claim to run them.
+GitHub Actions 对每次 push/PR 执行安装、单元测试和打包，并上传可下载的网页构建。完整 Chromium 验收记录见 QA 报告与 `docs/evidence/`。
