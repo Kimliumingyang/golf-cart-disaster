@@ -48,7 +48,7 @@ export class AssetLibrary extends EventTarget {
   get(id){return this.active.get(id)??this.bundled.get(id);}
   draw(ctx,id,x,y,w,h,{crop,fit='contain'}={}){
     const asset=this.get(id);if(!asset)return false;const image=asset.image;
-    let sx=0,sy=0,sw=image.width,sh=image.height;
+    crop??=asset.crop;let sx=0,sy=0,sw=image.width,sh=image.height;
     if(crop){[sx,sy,sw,sh]=[crop[0]*image.width,crop[1]*image.height,crop[2]*image.width,crop[3]*image.height];}
     let dw=w,dh=h;
     if(fit==='contain'||fit==='cover'){const scale=(fit==='cover'?Math.max:Math.min)(w/sw,h/sh);dw=sw*scale;dh=sh*scale;}

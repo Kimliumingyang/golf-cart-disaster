@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ball-9",
+    "slug": "01-ball-recovery",
+    "label": "离座后挂在车边 → 接触路面起伏 → 自然落回",
+    "seconds": 14,
+    "anchor": "ball-launched",
+    "startFrame": 1392,
+    "endFrame": 2232,
+    "frames": 450,
+    "file": "public/demos/01-ball-recovery.mp4",
+    "final": {
+      "x": 250.59973134521556,
+      "state": "RUN",
+      "stats": {
+        "departures": 1,
+        "recoveries": 1,
+        "grabs": 1,
+        "gripBreaks": 0,
+        "richCarContacts": 4,
+        "peakGripStretch": 0,
+        "peakGripKick": 0.049516336515008225
+      },
+      "reason": ""
+    }
+  },
+  {
+    "id": "reckless-rock",
+    "slug": "02-hill-rollover",
+    "label": "冲坡 + 错误压头 → 翻滚、短暂救回 → 真正失败",
+    "seconds": 15,
+    "anchor": "hill",
+    "startFrame": 2418,
+    "endFrame": 2861,
+    "frames": 252,
+    "file": "public/demos/02-hill-rollover.mp4",
+    "final": {
+      "x": 337.3456998630022,
+      "state": "FAIL",
+      "stats": {
+        "departures": 6,
+        "recoveries": 5,
+        "grabs": 2,
+        "gripBreaks": 0,
+        "richCarContacts": 5,
+        "peakGripStretch": 21.382141610458255,
+        "peakGripKick": 2.858314364386841
+      },
+      "reason": "The passenger fell beyond recovery range.",
+      "lost": "driver"
+    }
+  },
+  {
+    "id": "ball-medium-brake",
+    "slug": "03-heavy-impact",
+    "label": "同一颗球严重迎击 → 整车翻转 → 无法恢复",
+    "seconds": 13,
+    "anchor": "ball-launched",
+    "startFrame": 1452,
+    "endFrame": 2084,
+    "frames": 346,
+    "file": "public/demos/03-heavy-impact.mp4",
+    "final": {
+      "x": 166.4457051511727,
+      "state": "FAIL",
+      "stats": {
+        "departures": 4,
+        "recoveries": 2,
+        "grabs": 3,
+        "gripBreaks": 0,
+        "peakGripStretch": 6.975456489148364,
+        "peakGripKick": 2.0511415275090337,
+        "richCarContacts": 3
+      },
+      "reason": "The cart stayed upside down and motionless for 5 seconds.",
+      "lost": "cart"
+    }
+  }
+]

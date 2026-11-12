@@ -1,4 +1,11 @@
-import {level} from '../config/index.js';
-// A feedback controller pressing only the same GAS/BRAKE buttons as the player.
-// It never changes coordinates, velocities, pickups, hazards or outcomes.
-export function testDriver(g){let target=9;const x=g.x,v=g.speed;const station=level.pickups[g.pickups];let stop=station?.x??1501;if(g.events.pipe==='nope'&&x<516&&((g.elapsed-g.events.pipeAt)%3.5)<1.8)stop=Math.min(stop,513);const d=stop-x;if(d<0)target=Math.max(-1.7,d*.8);else target=Math.min(target,Math.sqrt(Math.max(0,d-1)*7));if(d<2&&d>-.2)target=Math.min(target,.4);if(x>640&&x<684)target=Math.min(target,3);if(x>145&&x<190&&g.events.ball!=='spent')target=Math.min(target,g.events.ball?0:3);if(x>255&&x<310)target=Math.min(target,2.5);if(x>978&&x<1075)target=Math.min(target,5);if(x>1075&&x<1110)target=Math.min(target,4);return {gas:v<target-.15,brake:v>target+.15,jump:false};}
+// A conservative STAGE 1 route. Only ordinary buttons; no state edits, teleports or recovery assists.
+export function testDriver(g) {
+  let target=7;
+  const x=g.x,v=g.speed,stop=g.pickups?400:120;
+  const d=stop-x;
+  if(d<0)target=Math.max(-2,d*.7);else target=Math.min(target,Math.sqrt(Math.max(0,d-1)*6));
+  if(d<2&&d>-.2)target=Math.min(target,.3);
+  if(x>145&&x<190&&g.events.ball!=='spent')target=Math.min(target,g.events.ball?0:3);
+  if(x>240&&x<320)target=Math.min(target,4);
+  return {gas:v<target-.15,brake:v>target+.15,jump:false,tiltUp:false,tiltDown:false};
+}

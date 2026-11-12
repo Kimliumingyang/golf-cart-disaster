@@ -1,0 +1,28 @@
+{
+  "name": "goose_scare_full",
+  "frameCount": 12,
+  "frameWidth": 358,
+  "frameHeight": 357,
+  "framesPerRow": 4,
+  "frameDurationMs": 110,
+  "playOnce": true,
+  "segments": [
+    {
+      "name": "run_in",
+      "startFrame": 0,
+      "endFrame": 3
+    },
+    {
+      "name": "honk_chase",
+      "startFrame": 4,
+      "endFrame": 8
+    },
+    {
+      "name": "run_out",
+      "startFrame": 9,
+      "endFrame": 11
+    }
+  ],
+  "worldMotion": "Animate sprites separately from x motion; Goose travels across screen with code. No physical impulses or damage.",
+  "notes": "GIF has binary transparency; per-frame PNGs have soft alpha. The light goose on light background may show a faint fringe."
+}

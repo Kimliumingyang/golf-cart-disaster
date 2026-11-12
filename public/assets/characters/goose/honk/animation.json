@@ -1,0 +1,13 @@
+{
+  "name": "goose_honk",
+  "frameWidth": 443,
+  "frameHeight": 443,
+  "columns": 4,
+  "rows": 2,
+  "frameCount": 8,
+  "frameDurationMs": 110,
+  "loop": true,
+  "sheet": "goose_spritesheet.png",
+  "framePrefix": "frames/goose_",
+  "note": "This is a frame animation; not editable Spine skeleton data."
+}

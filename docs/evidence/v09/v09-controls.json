@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "goose has no physics effects",
+    "keyboard / tilt / pause / blur",
+    "mobile five controls",
+    "asset editor geometry unchanged",
+    "ten full resets"
+  ],
+  "errors": []
+}

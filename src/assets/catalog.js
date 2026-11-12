@@ -10,7 +10,8 @@ export const slots=[
   {id:'vehicles.cart',label:'加长球车 · 车身',category:'vehicles',required:true},
   {id:'vehicles.wheel',label:'车轮 · 独立贴图',category:'vehicles'},
   {id:'environment.background',label:'远景背景（不替换碰撞地形）',category:'environment',required:true},
-  {id:'environment.goose',label:'大鹅（始终无碰撞）',category:'environment'},
+  {id:'environment.goose',label:'大鹅序列 · 4×3 图集（无碰撞）',category:'environment'},
+  {id:'environment.gooseHonk',label:'大鹅叫声 · 4×2 图集（无碰撞）',category:'environment'},
   {id:'effects.ball',label:'高尔夫球',category:'effects',required:true},
   {id:'effects.splash',label:'水滴',category:'effects'},
 ];

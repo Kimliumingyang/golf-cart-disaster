@@ -1,10 +1,12 @@
+import stage1 from '../config/STAGE1.json' with {type:'json'};
 import {level, PPM} from '../config/index.js';
 export function rampWidth(b) {
   return b.maxSlopeDeg ? b.heightM * Math.PI / (2 * Math.tan(b.maxSlopeDeg * Math.PI / 180)) : null;
 }
 export function heightM(x) {
   let h = 0;
-  for (const b of level.terrain.bumps) {
+  for (const original of [...level.terrain.bumps.filter(b=>b.start<stage1.endM),...stage1.roadBumps]) {
+    const b=original.id==='big_hill_1'?{...original,maxSlopeDeg:stage1.maxHillSlopeDeg}:original;
     if (x < b.start || x > b.end) continue;
     const width = rampWidth(b);
     const start = width ? b.peak - width : b.start;

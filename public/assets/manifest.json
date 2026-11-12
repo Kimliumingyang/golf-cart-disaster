@@ -1,5 +1,5 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "assets": [
     {
       "slot": "characters.rich",
@@ -47,7 +47,35 @@
       "slot": "environment.background",
       "path": "assets/environment/background.png",
       "name": "Frame 2.png",
-      "originalPath": "assets/originals/Frame 2.png"
+      "originalPath": "assets/originals/Frame 2.png",
+      "crop": [
+        0,
+        0,
+        0.8,
+        0.7
+      ]
+    },
+    {
+      "slot": "environment.goose",
+      "path": "assets/characters/goose/sequence/goose_spritesheet_4x3.png",
+      "name": "Goose full sequence · 12 frames",
+      "animation": {
+        "columns": 4,
+        "rows": 3,
+        "frameCount": 12,
+        "frameDurationMs": 110
+      }
+    },
+    {
+      "slot": "environment.gooseHonk",
+      "path": "assets/characters/goose/honk/goose_spritesheet.png",
+      "name": "Goose honk · 8 frames",
+      "animation": {
+        "columns": 4,
+        "rows": 2,
+        "frameCount": 8,
+        "frameDurationMs": 110
+      }
     }
   ]
 }

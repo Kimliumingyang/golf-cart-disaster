@@ -1,0 +1,3590 @@
+[
+  {
+    "id": "slow-tour",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.7336981357161,
+    "v": 0.12141635182888422,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 36.26666666666589,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 25.683,
+        "x": 118.65,
+        "v": 0.257,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 36.267,
+        "x": 158.612,
+        "v": 2.952,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 37.483,
+        "x": 159.245,
+        "v": -0.042,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 38.083,
+        "x": 159.256,
+        "v": 0.009,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 81.6,
+        "x": 334.018,
+        "v": 4.818,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 95.917,
+        "x": 398.734,
+        "v": 0.121,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 4.6312056035658316,
+        "maxSeatDistance": 15.652616106148004,
+        "maxLiftPx": 0.020269814362349522,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 2.8090097465304353,
+        "maxSeatDistance": 13.719821459055558,
+        "maxLiftPx": 0.03933941424872515,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5562700597423375,
+    "maxLean": 0.7383396949973259,
+    "maxLift": 0.03933941424872515,
+    "maxSeat": 13.719821459055558,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.354595785765426,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "flow",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.7731211293052,
+    "v": 0.15876798442332074,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 25.799999999999816,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 25.8,
+        "x": 158.63,
+        "v": 2.848,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 27.017,
+        "x": 159.262,
+        "v": -0.01,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 27.617,
+        "x": 159.285,
+        "v": 0.09,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 53.9,
+        "x": 334.05,
+        "v": 7.761,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 63.283,
+        "x": 398.773,
+        "v": 0.159,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 7.108516265017721,
+        "maxSeatDistance": 17.158783586363047,
+        "maxLiftPx": 0.3800992243316419,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 5.6331250570366675,
+        "maxSeatDistance": 12.234856214258702,
+        "maxLiftPx": 1.743784439324771,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5570676397020083,
+    "maxLean": 1.0083156713702492,
+    "maxLift": 1.743784439324771,
+    "maxSeat": 12.234856214258702,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.7142114985365,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "quick-cautious",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.64816299514257,
+    "v": 0.2819416349120729,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 19.98333333333348,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 13.3,
+        "x": 118.682,
+        "v": 0.169,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 19.983,
+        "x": 158.606,
+        "v": 2.813,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 21.2,
+        "x": 159.247,
+        "v": 0.053,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 21.8,
+        "x": 159.252,
+        "v": -0.046,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 42.95,
+        "x": 334.006,
+        "v": 11.827,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 50.367,
+        "x": 398.648,
+        "v": 0.282,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.335650237867775,
+        "maxSeatDistance": 16.583454967244972,
+        "maxLiftPx": 2.5326559638561603,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.244637850419895,
+        "maxSeatDistance": 13.376777121915893,
+        "maxLiftPx": 0.02093954987664694,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5584327978134591,
+    "maxLean": 0.7073105927051957,
+    "maxLift": 0.02093954987664694,
+    "maxSeat": 13.376777121915893,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.810847782461536,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "crest-brake",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.6919068053858,
+    "v": 0.2248941875195669,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 19.98333333333348,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 13.3,
+        "x": 118.682,
+        "v": 0.169,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 19.983,
+        "x": 158.606,
+        "v": 2.813,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 21.2,
+        "x": 159.247,
+        "v": 0.053,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 21.8,
+        "x": 159.252,
+        "v": -0.046,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 45.083,
+        "x": 334.201,
+        "v": 11.743,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 52.483,
+        "x": 398.692,
+        "v": 0.225,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.194499002459288,
+        "maxSeatDistance": 16.6893973923669,
+        "maxLiftPx": 2.5326559638561603,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 11.551043602586352,
+        "maxSeatDistance": 14.596103915860162,
+        "maxLiftPx": 0.02093954987664694,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5571105646777835,
+    "maxLean": 0.7073105927051957,
+    "maxLift": 0.02093954987664694,
+    "maxSeat": 14.596103915860162,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.810847782461536,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "crest-coast",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.66706989007275,
+    "v": 0.19923639277658367,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 19.98333333333348,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 13.3,
+        "x": 118.682,
+        "v": 0.169,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 19.983,
+        "x": 158.606,
+        "v": 2.813,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 21.2,
+        "x": 159.247,
+        "v": 0.053,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 21.8,
+        "x": 159.252,
+        "v": -0.046,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 37.017,
+        "x": 334.044,
+        "v": 11.901,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 44.45,
+        "x": 398.667,
+        "v": 0.199,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 9.80542073679576,
+        "maxSeatDistance": 16.34487050265502,
+        "maxLiftPx": 2.5326559638561603,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 12.268634529564547,
+        "maxSeatDistance": 13.376777121915893,
+        "maxLiftPx": 0.02093954987664694,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5582503401243853,
+    "maxLean": 0.7073105927051957,
+    "maxLift": 0.02093954987664694,
+    "maxSeat": 13.376777121915893,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.810847782461536,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "crest-hop-save",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.6683582260674,
+    "v": 0.25604472632130637,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 19.98333333333348,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 13.3,
+        "x": 118.682,
+        "v": 0.169,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 19.983,
+        "x": 158.606,
+        "v": 2.813,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 21.2,
+        "x": 159.247,
+        "v": 0.053,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 21.8,
+        "x": 159.252,
+        "v": -0.046,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 46.217,
+        "x": 334.001,
+        "v": 11.927,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 53.65,
+        "x": 398.668,
+        "v": 0.256,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.695580424974882,
+        "maxSeatDistance": 17.036107472857726,
+        "maxLiftPx": 2.5326559638561603,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.164952060257434,
+        "maxSeatDistance": 14.91584811792571,
+        "maxLiftPx": 0.6220328130400348,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5564203151017219,
+    "maxLean": 0.7073105927051957,
+    "maxLift": 0.6220328130400348,
+    "maxSeat": 14.91584811792571,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.810847782461536,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "crest-flatout",
+    "outcome": "TIME_LIMIT",
+    "state": "RUN",
+    "x": 397.9966182476433,
+    "v": 0.3478793178601336,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 4,
+      "recoveries": 3,
+      "grabs": 3,
+      "gripBreaks": 0,
+      "peakGripStretch": 20.427627015893567,
+      "peakGripKick": 1.271685290555324,
+      "richCarContacts": 4
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 25.799999999999816,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 25.8,
+        "x": 158.63,
+        "v": 2.848,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 27.017,
+        "x": 159.262,
+        "v": -0.01,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 27.617,
+        "x": 159.285,
+        "v": 0.09,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 43.1,
+        "x": 308.655,
+        "v": 4.119,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 43.15,
+        "x": 308.921,
+        "v": 4.496,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 43.25,
+        "x": 309.478,
+        "v": 5.581,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 43.3,
+        "x": 309.703,
+        "v": 5.706,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.2014277079836657,
+        "event": "rich-hit-cart",
+        "t": 43.5,
+        "x": 310.817,
+        "v": 6.368,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 66.72881148975284,
+        "event": "rich-recovered",
+        "t": 43.517,
+        "x": 310.917,
+        "v": 6.388,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 43.95,
+        "x": 313.918,
+        "v": 8.054,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.363605730225531,
+        "event": "rich-hit-cart",
+        "t": 44.05,
+        "x": 314.676,
+        "v": 8.24,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 60.45066640539298,
+        "event": "rich-recovered",
+        "t": 44.133,
+        "x": 315.346,
+        "v": 8.782,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-released-rail",
+        "t": 44.85,
+        "x": 322.489,
+        "v": 10.18,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 45.383,
+        "x": 326.917,
+        "v": 7.989,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 45.417,
+        "x": 327.168,
+        "v": 8.019,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.4060495906583126,
+        "event": "rich-hit-cart",
+        "t": 45.983,
+        "x": 331.476,
+        "v": 7.936,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.091708403431225,
+        "event": "rich-hit-cart",
+        "t": 46.267,
+        "x": 333.65,
+        "v": 7.862,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 25.180034923093686,
+        "event": "rich-recovered",
+        "t": 46.3,
+        "x": 333.9,
+        "v": 7.874,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 46.3,
+        "x": 334.026,
+        "v": 7.812,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-released-rail",
+        "t": 46.75,
+        "x": 337.395,
+        "v": 7.895,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 72.96100029421815,
+        "maxSeatDistance": 85.47464862760313,
+        "maxLiftPx": 10.25373295197744,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 72.50766179314877,
+        "maxSeatDistance": 86.23043421954998,
+        "maxLiftPx": 66.72881148975284,
+        "recoveredCount": 3
+      }
+    ],
+    "maxRoll": 0.6704751811593497,
+    "maxLean": 3.139528888246037,
+    "maxLift": 66.72881148975284,
+    "maxSeat": 86.23043421954998,
+    "richGround": 0,
+    "firstAir": 2632,
+    "minAxleDrop": 16.73028250563813,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-fast-dodge",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.6823512021854,
+    "v": 0.18461052959719382,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 21.50000000000006,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 21.5,
+        "x": 158.738,
+        "v": 19.755,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 22.717,
+        "x": 182.647,
+        "v": 19.391,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 23.317,
+        "x": 194.085,
+        "v": 19.739,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 41.983,
+        "x": 334.127,
+        "v": 7.763,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 51.533,
+        "x": 398.682,
+        "v": 0.185,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 8.121282754999358,
+        "maxSeatDistance": 16.95571312731114,
+        "maxLiftPx": 2.745317004358059,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 3.0378868131044996,
+        "maxSeatDistance": 16.137039092144235,
+        "maxLiftPx": 5.409333013221811,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5565143231042894,
+    "maxLean": 0.7290679255850505,
+    "maxLift": 5.409333013221811,
+    "maxSeat": 16.137039092144235,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.038590932738273,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-medium-brake",
+    "outcome": "FAIL",
+    "state": "FAIL",
+    "x": 166.4457051511727,
+    "v": 3.722075234691147e-07,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 4,
+      "recoveries": 2,
+      "grabs": 3,
+      "gripBreaks": 0,
+      "peakGripStretch": 6.975456489148364,
+      "peakGripKick": 2.0511415275090337,
+      "richCarContacts": 3
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 23.983333333333253
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 23.983,
+        "x": 158.692,
+        "v": 6.876,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 25.2,
+        "x": 167.055,
+        "v": 6.853,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 25.8,
+        "x": 171.059,
+        "v": 6.947,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 26.367,
+        "x": 172.029,
+        "v": -1.314,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 26.517,
+        "x": 171.812,
+        "v": -1.685,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.5428346688287995,
+        "event": "rich-hit-cart",
+        "t": 26.517,
+        "x": 171.812,
+        "v": -1.685,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 26.7,
+        "x": 171.455,
+        "v": -2.122,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 4.038329491572046,
+        "event": "rich-hit-cart",
+        "t": 26.7,
+        "x": 171.455,
+        "v": -2.122,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 13.586938936398504,
+        "event": "rich-recovered",
+        "t": 26.717,
+        "x": 171.421,
+        "v": -2.135,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-released-rail",
+        "t": 27.467,
+        "x": 169.534,
+        "v": -2.973,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 27.75,
+        "x": 168.643,
+        "v": -3.36,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 27.783,
+        "x": 168.532,
+        "v": -3.353,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.031961546070526,
+        "event": "rich-hit-cart",
+        "t": 27.817,
+        "x": 168.42,
+        "v": -3.338,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 29.903958985296125,
+        "event": "driver-recovered",
+        "t": 27.933,
+        "x": 167.893,
+        "v": -3.24,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 28.033,
+        "x": 167.526,
+        "v": -2.795,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 28.117,
+        "x": 167.302,
+        "v": -2.427,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "lost-cart",
+        "t": 33.567,
+        "x": 166.446,
+        "v": 0,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 71.14447482061942,
+        "maxSeatDistance": 72.51107097738075,
+        "maxLiftPx": 43.724366313773075,
+        "recoveredCount": 1
+      },
+      {
+        "id": "rich",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 64.62874779876029,
+        "maxSeatDistance": 68.55552278983912,
+        "maxLiftPx": 40.62107807520438,
+        "recoveredCount": 1
+      }
+    ],
+    "maxRoll": 2.9812826744026544,
+    "maxLean": 1.6300272126194018,
+    "maxLift": 40.62107807520438,
+    "maxSeat": 68.55552278983912,
+    "richGround": 371,
+    "firstAir": 1682,
+    "minAxleDrop": 18.04430220321793,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-medium-gas",
+    "outcome": "FAIL",
+    "state": "FAIL",
+    "x": 169.76449402075838,
+    "v": 8.52323864819482e-08,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 5,
+      "recoveries": 3,
+      "grabs": 2,
+      "gripBreaks": 0,
+      "peakGripStretch": 10.627779266763856,
+      "peakGripKick": 2.3992102629916814,
+      "richCarContacts": 4
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 23.983333333333253
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 23.983,
+        "x": 158.692,
+        "v": 6.876,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 25.2,
+        "x": 167.055,
+        "v": 6.853,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 25.8,
+        "x": 171.059,
+        "v": 6.947,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 26.267,
+        "x": 172.825,
+        "v": 3.745,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 26.567,
+        "x": 173.387,
+        "v": -0.099,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.3753861440059674,
+        "event": "rich-hit-cart",
+        "t": 26.567,
+        "x": 173.387,
+        "v": -0.099,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 22.677620318119107,
+        "event": "rich-recovered",
+        "t": 26.667,
+        "x": 173.363,
+        "v": -0.493,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 27.017,
+        "x": 173.183,
+        "v": -0.807,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 27.05,
+        "x": 173.162,
+        "v": -0.825,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.4059876826833138,
+        "event": "rich-hit-cart",
+        "t": 27.167,
+        "x": 173.09,
+        "v": -0.86,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 27.2,
+        "x": 173.073,
+        "v": -0.806,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.4690497927679083,
+        "event": "rich-hit-cart",
+        "t": 27.667,
+        "x": 172.648,
+        "v": -1.053,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 40.66488072340109,
+        "event": "rich-recovered",
+        "t": 27.683,
+        "x": 172.631,
+        "v": -1.047,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 28.167,
+        "x": 172.012,
+        "v": -1.513,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 4.105955971989184,
+        "event": "rich-hit-cart",
+        "t": 28.85,
+        "x": 170.664,
+        "v": -2.532,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 68.04650616803022,
+        "event": "rich-recovered",
+        "t": 28.883,
+        "x": 170.596,
+        "v": -2.456,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 29.317,
+        "x": 169.697,
+        "v": -0.056,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "lost-cart",
+        "t": 34.3,
+        "x": 169.764,
+        "v": 0,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 76.88730962781214,
+        "maxSeatDistance": 128.7759236852096,
+        "maxLiftPx": 81.12490357338572,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 52.90600848300123,
+        "maxSeatDistance": 78.90826679010128,
+        "maxLiftPx": 68.04650616803022,
+        "recoveredCount": 3
+      }
+    ],
+    "maxRoll": 2.9875375816175813,
+    "maxLean": 3.1252197179771346,
+    "maxLift": 68.04650616803022,
+    "maxSeat": 78.90826679010128,
+    "richGround": 6,
+    "firstAir": 1643,
+    "minAxleDrop": 18.04378565509616,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-glance",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.65373583403203,
+    "v": 0.19217854237194842,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 22.100000000000026,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 22.1,
+        "x": 158.731,
+        "v": 11.615,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 23.317,
+        "x": 173.153,
+        "v": 11.895,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 23.733,
+        "x": 177.86,
+        "v": 11.981,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 45.5,
+        "x": 334.05,
+        "v": 7.837,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 55.1,
+        "x": 398.654,
+        "v": 0.192,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.752139929873698,
+        "maxSeatDistance": 16.710949427583042,
+        "maxLiftPx": 0.796600103786502,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 9.571405730965083,
+        "maxSeatDistance": 9.571405730965083,
+        "maxLiftPx": 0.011966863950087244,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5569658971725476,
+    "maxLean": 0.7153982307444645,
+    "maxLift": 0.011966863950087244,
+    "maxSeat": 9.571405730965083,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.547977561813433,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-8",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 399.4337776223093,
+    "v": -0.08756040453044989,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 23.383333333333287,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 23.383,
+        "x": 158.7,
+        "v": 7.746,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 24.6,
+        "x": 168.247,
+        "v": 7.878,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 25.15,
+        "x": 172.428,
+        "v": 7.801,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 48.833,
+        "x": 334.022,
+        "v": 7.91,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 56.933,
+        "x": 399.434,
+        "v": -0.088,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 17.600990741380848,
+        "maxSeatDistance": 26.132768624316636,
+        "maxLiftPx": 6.436636300794825,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 12.15004489497914,
+        "maxSeatDistance": 19.653314016904165,
+        "maxLiftPx": 17.6952335915012,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.558355617347338,
+    "maxLean": 1.3300993941962624,
+    "maxLift": 17.6952335915012,
+    "maxSeat": 19.653314016904165,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.85616129149269,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-9",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 399.2701937672235,
+    "v": 0.020410995777638163,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 1,
+      "recoveries": 1,
+      "grabs": 1,
+      "gripBreaks": 0,
+      "richCarContacts": 4,
+      "peakGripStretch": 0,
+      "peakGripKick": 0.049516336515008225
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 22.916666666666647,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 22.917,
+        "x": 158.683,
+        "v": 8.88,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 24.133,
+        "x": 169.456,
+        "v": 8.968,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 24.65,
+        "x": 173.881,
+        "v": 8.765,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 32.05,
+        "x": 213.999,
+        "v": 7.929,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 0.7992525014004446,
+        "event": "rich-hit-cart",
+        "t": 32.05,
+        "x": 213.999,
+        "v": 7.929,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.0935155936301246,
+        "event": "rich-hit-cart",
+        "t": 32.467,
+        "x": 217.802,
+        "v": 7.92,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 0.8381047881450238,
+        "event": "rich-hit-cart",
+        "t": 32.7,
+        "x": 219.985,
+        "v": 7.948,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 3.7272679969684317,
+        "event": "rich-hit-cart",
+        "t": 32.883,
+        "x": 221.655,
+        "v": 7.964,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 34.666478710600806,
+        "event": "rich-recovered",
+        "t": 32.9,
+        "x": 221.805,
+        "v": 7.904,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 33.15,
+        "x": 224.017,
+        "v": 7.815,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-released-rail",
+        "t": 33.617,
+        "x": 228.2,
+        "v": 7.754,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 48.233,
+        "x": 334.11,
+        "v": 7.736,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 56.467,
+        "x": 399.27,
+        "v": 0.02,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 20.967528563480094,
+        "maxSeatDistance": 24.160452323611327,
+        "maxLiftPx": 5.261152816897081,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 56.88035574835815,
+        "maxSeatDistance": 59.14583471808733,
+        "maxLiftPx": 34.666478710600806,
+        "recoveredCount": 1
+      }
+    ],
+    "maxRoll": 0.556051066638009,
+    "maxLean": 2.8218671630795087,
+    "maxLift": 34.666478710600806,
+    "maxSeat": 59.14583471808733,
+    "richGround": 0,
+    "firstAir": 1548,
+    "minAxleDrop": 16.145447928400614,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-10",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.6410973808933,
+    "v": 0.2486178492081308,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 22.566666666666666,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 22.567,
+        "x": 158.715,
+        "v": 9.795,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 23.783,
+        "x": 170.735,
+        "v": 9.964,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 24.267,
+        "x": 175.337,
+        "v": 9.84,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 46.967,
+        "x": 334.037,
+        "v": 7.737,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 56.517,
+        "x": 398.641,
+        "v": 0.249,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.394547356837146,
+        "maxSeatDistance": 17.024131621065763,
+        "maxLiftPx": 0,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.023659404166285,
+        "maxSeatDistance": 13.891223761479083,
+        "maxLiftPx": 0.011966863950087244,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5569780567142235,
+    "maxLean": 0.7129959006629567,
+    "maxLift": 0.011966863950087244,
+    "maxSeat": 13.891223761479083,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.776334435978647,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "reverse-rescue",
+    "outcome": "FAIL",
+    "state": "FAIL",
+    "x": 166.4457051511727,
+    "v": 3.722075234691147e-07,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 4,
+      "recoveries": 2,
+      "grabs": 3,
+      "gripBreaks": 0,
+      "peakGripStretch": 6.975456489148364,
+      "peakGripKick": 2.0511415275090337,
+      "richCarContacts": 3
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 23.983333333333253
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 23.983,
+        "x": 158.692,
+        "v": 6.876,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 25.2,
+        "x": 167.055,
+        "v": 6.853,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 25.8,
+        "x": 171.059,
+        "v": 6.947,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 26.367,
+        "x": 172.029,
+        "v": -1.314,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 26.517,
+        "x": 171.812,
+        "v": -1.685,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.5428346688287995,
+        "event": "rich-hit-cart",
+        "t": 26.517,
+        "x": 171.812,
+        "v": -1.685,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 26.7,
+        "x": 171.455,
+        "v": -2.122,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 4.038329491572046,
+        "event": "rich-hit-cart",
+        "t": 26.7,
+        "x": 171.455,
+        "v": -2.122,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 13.586938936398504,
+        "event": "rich-recovered",
+        "t": 26.717,
+        "x": 171.421,
+        "v": -2.135,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-released-rail",
+        "t": 27.467,
+        "x": 169.534,
+        "v": -2.973,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 27.75,
+        "x": 168.643,
+        "v": -3.36,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 27.783,
+        "x": 168.532,
+        "v": -3.353,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.031961546070526,
+        "event": "rich-hit-cart",
+        "t": 27.817,
+        "x": 168.42,
+        "v": -3.338,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 29.903958985296125,
+        "event": "driver-recovered",
+        "t": 27.933,
+        "x": 167.893,
+        "v": -3.24,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 28.033,
+        "x": 167.526,
+        "v": -2.795,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 28.117,
+        "x": 167.302,
+        "v": -2.427,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "lost-cart",
+        "t": 33.567,
+        "x": 166.446,
+        "v": 0,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 71.14447482061942,
+        "maxSeatDistance": 72.51107097738075,
+        "maxLiftPx": 43.724366313773075,
+        "recoveredCount": 1
+      },
+      {
+        "id": "rich",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 64.62874779876029,
+        "maxSeatDistance": 68.55552278983912,
+        "maxLiftPx": 40.62107807520438,
+        "recoveredCount": 1
+      }
+    ],
+    "maxRoll": 2.9812826744026544,
+    "maxLean": 1.6300272126194018,
+    "maxLift": 40.62107807520438,
+    "maxSeat": 68.55552278983912,
+    "richGround": 371,
+    "firstAir": 1682,
+    "minAxleDrop": 18.04430220321793,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "brake-pulse",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.5254209012593,
+    "v": 0.14186828608490032,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 26.466666666666445,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 26.467,
+        "x": 158.622,
+        "v": 2.802,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 27.683,
+        "x": 159.311,
+        "v": -0.02,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 28.283,
+        "x": 159.312,
+        "v": -0.006,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 58.367,
+        "x": 334.038,
+        "v": 9.91,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 74.217,
+        "x": 398.525,
+        "v": 0.142,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 9.149393224887676,
+        "maxSeatDistance": 18.05631191190164,
+        "maxLiftPx": 4.94614674565363,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 6.399517420675639,
+        "maxSeatDistance": 12.49823852015383,
+        "maxLiftPx": 0.011966863950087244,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5563101098502241,
+    "maxLean": 0.7457167001541575,
+    "maxLift": 0.011966863950087244,
+    "maxSeat": 12.49823852015383,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.51560724203705,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "rock-and-land",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.64098702054514,
+    "v": 0.4574032875852936,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 2,
+      "recoveries": 2,
+      "grabs": 2,
+      "gripBreaks": 0,
+      "peakGripStretch": 2.533594126074112,
+      "peakGripKick": 0.7001892881990204
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 19.98333333333348,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 13.3,
+        "x": 118.682,
+        "v": 0.169,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 19.983,
+        "x": 158.606,
+        "v": 2.813,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 21.2,
+        "x": 159.247,
+        "v": 0.053,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 21.8,
+        "x": 159.252,
+        "v": -0.046,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 32.667,
+        "x": 284.132,
+        "v": 15.885,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 32.817,
+        "x": 286.542,
+        "v": 15.767,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 33.05,
+        "x": 290.282,
+        "v": 15.665,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 33.2,
+        "x": 292.639,
+        "v": 15.56,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 21.96807092372421,
+        "event": "driver-recovered",
+        "t": 33.25,
+        "x": 293.412,
+        "v": 14.875,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 10.024306927149679,
+        "event": "rich-recovered",
+        "t": 33.367,
+        "x": 295.156,
+        "v": 14.216,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-released-rail",
+        "t": 33.817,
+        "x": 300.921,
+        "v": 11.455,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-released-rail",
+        "t": 33.867,
+        "x": 301.504,
+        "v": 10.834,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 39.8,
+        "x": 334.007,
+        "v": 11.803,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 47.2,
+        "x": 398.641,
+        "v": 0.457,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.239021140954666,
+        "maxSeatDistance": 27.952792504398975,
+        "maxLiftPx": 21.96807092372421,
+        "recoveredCount": 1
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 7.305627348573514,
+        "maxSeatDistance": 15.034314814930909,
+        "maxLiftPx": 10.024306927149679,
+        "recoveredCount": 1
+      }
+    ],
+    "maxRoll": 0.565271749908763,
+    "maxLean": 0.9255902650907009,
+    "maxLift": 10.024306927149679,
+    "maxSeat": 15.034314814930909,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 15.850755317980713,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "panic-hop",
+    "outcome": "FAIL",
+    "state": "FAIL",
+    "x": 341.923332067123,
+    "v": 9.746447978301148,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 8,
+      "recoveries": 7,
+      "grabs": 3,
+      "gripBreaks": 1,
+      "peakGripStretch": 34.37361841578832,
+      "peakGripKick": 3.1630462144290985,
+      "richCarContacts": 7
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 21.800000000000043,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 21.8,
+        "x": 158.702,
+        "v": 9.028,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 23.017,
+        "x": 163.962,
+        "v": 0.085,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 23.617,
+        "x": 163.963,
+        "v": -0.047,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 29.117,
+        "x": 228.602,
+        "v": 18.472,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 29.267,
+        "x": 231.437,
+        "v": 19.568,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 19.34074037159396,
+        "event": "driver-recovered",
+        "t": 29.45,
+        "x": 234.929,
+        "v": 18.149,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-released-rail",
+        "t": 29.9,
+        "x": 243.672,
+        "v": 19.667,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 32.067,
+        "x": 285.265,
+        "v": 19.544,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 32.217,
+        "x": 288.205,
+        "v": 19.425,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 32.883,
+        "x": 300.969,
+        "v": 18.822,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 33.033,
+        "x": 303.78,
+        "v": 18.664,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grip-broke",
+        "t": 33.233,
+        "x": 307.536,
+        "v": 17.753,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 4.161755298285447,
+        "event": "rich-hit-cart",
+        "t": 33.833,
+        "x": 316.547,
+        "v": 8.983,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 113.54827562474776,
+        "event": "rich-recovered",
+        "t": 33.883,
+        "x": 317.069,
+        "v": 8.912,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 34.167,
+        "x": 320.31,
+        "v": 9.718,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 4.872872178436429,
+        "event": "rich-hit-cart",
+        "t": 34.183,
+        "x": 320.485,
+        "v": 9.732,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 34.71568703430645,
+        "event": "rich-recovered",
+        "t": 34.2,
+        "x": 320.658,
+        "v": 9.749,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 34.4,
+        "x": 322.822,
+        "v": 11.376,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 5.775513056169139,
+        "event": "rich-hit-cart",
+        "t": 34.633,
+        "x": 325.622,
+        "v": 11.022,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 49.69896222057369,
+        "event": "rich-recovered",
+        "t": 34.683,
+        "x": 326.112,
+        "v": 9.479,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 35.083,
+        "x": 329.455,
+        "v": 7.928,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 0.874215059222409,
+        "event": "rich-hit-cart",
+        "t": 35.25,
+        "x": 330.798,
+        "v": 7.935,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.6879485532300147,
+        "event": "rich-hit-cart",
+        "t": 35.433,
+        "x": 332.29,
+        "v": 8.281,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 38.70991694824292,
+        "event": "rich-recovered",
+        "t": 35.5,
+        "x": 332.85,
+        "v": 7.714,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 35.65,
+        "x": 334.094,
+        "v": 7.474,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 35.833,
+        "x": 335.394,
+        "v": 7.528,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 0.8467963294105003,
+        "event": "rich-hit-cart",
+        "t": 35.933,
+        "x": 336.14,
+        "v": 7.527,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 15.062430630598044,
+        "event": "rich-recovered",
+        "t": 35.95,
+        "x": 336.263,
+        "v": 7.674,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 36.383,
+        "x": 339.764,
+        "v": 8.836,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.3560131271683558,
+        "event": "rich-hit-cart",
+        "t": 36.4,
+        "x": 339.914,
+        "v": 8.977,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 2.460417623651825,
+        "event": "rich-recovered",
+        "t": 36.417,
+        "x": 340.063,
+        "v": 9.019,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "lost-driver",
+        "t": 36.6,
+        "x": 341.761,
+        "v": 9.615,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 2.5166666666666626,
+        "seated": false,
+        "handGrip": false,
+        "seatDistance": 1558.9867503199296,
+        "maxSeatDistance": 1558.9867503199296,
+        "maxLiftPx": 353.0722181434776,
+        "recoveredCount": 1
+      },
+      {
+        "id": "rich",
+        "grip": true,
+        "outside": 0,
+        "seated": true,
+        "handGrip": true,
+        "seatDistance": 107.10104202497723,
+        "maxSeatDistance": 135.24898173552188,
+        "maxLiftPx": 113.54827562474776,
+        "recoveredCount": 6
+      }
+    ],
+    "maxRoll": 6.455435418191264,
+    "maxLean": 3.105685305222354,
+    "maxLift": 113.54827562474776,
+    "maxSeat": 135.24898173552188,
+    "richGround": 4,
+    "firstAir": 2013,
+    "minAxleDrop": 11.733911420235536,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "reckless-rock",
+    "outcome": "FAIL",
+    "state": "FAIL",
+    "x": 337.3456998630022,
+    "v": 7.948314664286045,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 6,
+      "recoveries": 5,
+      "grabs": 2,
+      "gripBreaks": 0,
+      "richCarContacts": 5,
+      "peakGripStretch": 21.382141610458255,
+      "peakGripKick": 2.858314364386841
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 25.799999999999816,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 25.8,
+        "x": 158.63,
+        "v": 2.848,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 27.017,
+        "x": 159.262,
+        "v": -0.01,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 27.617,
+        "x": 159.285,
+        "v": 0.09,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 42.267,
+        "x": 292.924,
+        "v": 18.957,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 42.667,
+        "x": 300.428,
+        "v": 18.476,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 20.562469706449114,
+        "event": "rich-hit-cart",
+        "t": 43.2,
+        "x": 310.089,
+        "v": 17.097,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 121.75503495233448,
+        "event": "driver-recovered",
+        "t": 43.217,
+        "x": 310.279,
+        "v": 16.259,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 43.217,
+        "x": 310.279,
+        "v": 16.259,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 43.417,
+        "x": 313.946,
+        "v": 15.313,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 7.773412900986767,
+        "event": "rich-hit-cart",
+        "t": 43.617,
+        "x": 316.623,
+        "v": 10.068,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 87.59617471780001,
+        "event": "rich-recovered",
+        "t": 43.75,
+        "x": 318.24,
+        "v": 9.921,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-released-rail",
+        "t": 44.2,
+        "x": 323.197,
+        "v": 9.6,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 44.783,
+        "x": 327.038,
+        "v": 4.332,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 44.933,
+        "x": 327.69,
+        "v": 4.309,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.4139789982622024,
+        "event": "rich-hit-cart",
+        "t": 45.083,
+        "x": 328.342,
+        "v": 4.544,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 38.280333062763596,
+        "event": "rich-recovered",
+        "t": 45.15,
+        "x": 328.635,
+        "v": 4.413,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 45.5,
+        "x": 330.334,
+        "v": 5.015,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.5465018827833872,
+        "event": "rich-hit-cart",
+        "t": 45.583,
+        "x": 330.772,
+        "v": 5.215,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 33.237025735628805,
+        "event": "rich-recovered",
+        "t": 45.6,
+        "x": 330.859,
+        "v": 5.319,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 45.983,
+        "x": 333.19,
+        "v": 7.035,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 2.822025401258197,
+        "event": "rich-hit-cart",
+        "t": 46.017,
+        "x": 333.418,
+        "v": 6.863,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 12.452593936069478,
+        "event": "rich-recovered",
+        "t": 46.05,
+        "x": 333.65,
+        "v": 6.886,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 46.1,
+        "x": 334.114,
+        "v": 6.965,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-released-rail",
+        "t": 46.5,
+        "x": 337.081,
+        "v": 7.989,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "lost-driver",
+        "t": 46.517,
+        "x": 337.213,
+        "v": 7.928,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 2.5166666666666626,
+        "seated": false,
+        "handGrip": false,
+        "seatDistance": 1001.3535256069811,
+        "maxSeatDistance": 1001.3535256069811,
+        "maxLiftPx": 172.21493556131728,
+        "recoveredCount": 1
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 147.1429988187712,
+        "maxSeatDistance": 153.12591744982475,
+        "maxLiftPx": 87.59617471780001,
+        "recoveredCount": 4
+      }
+    ],
+    "maxRoll": 6.3965578920656565,
+    "maxLean": 3.1382457153834724,
+    "maxLift": 87.59617471780001,
+    "maxSeat": 153.12591744982475,
+    "richGround": 3,
+    "firstAir": 2598,
+    "minAxleDrop": 12.843716552088267,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "upside-panic",
+    "outcome": "FAIL",
+    "state": "FAIL",
+    "x": 167.95225408522268,
+    "v": 0.12427258377556427,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 4,
+      "recoveries": 2,
+      "grabs": 2,
+      "gripBreaks": 0,
+      "peakGripStretch": 4.159794657551327,
+      "peakGripKick": 2.291864863482223,
+      "richCarContacts": 5
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 23.983333333333253
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 23.983,
+        "x": 158.692,
+        "v": 6.876,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 25.2,
+        "x": 167.055,
+        "v": 6.853,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 25.8,
+        "x": 171.059,
+        "v": 6.947,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 26.333,
+        "x": 171.912,
+        "v": -1.385,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 26.483,
+        "x": 171.702,
+        "v": -1.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 3.2122140873757914,
+        "event": "rich-hit-cart",
+        "t": 26.533,
+        "x": 171.633,
+        "v": -1.302,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 14.519231055865077,
+        "event": "rich-recovered",
+        "t": 26.6,
+        "x": 171.542,
+        "v": -1.275,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 26.85,
+        "x": 170.965,
+        "v": -3.098,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 3.7086175282463514,
+        "event": "rich-hit-cart",
+        "t": 26.85,
+        "x": 170.965,
+        "v": -3.098,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 6.083677950327717,
+        "event": "rich-hit-cart",
+        "t": 27.15,
+        "x": 169.934,
+        "v": -3.5,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 27.233,
+        "x": 169.554,
+        "v": -3.202,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 27.467,
+        "x": 168.788,
+        "v": -2.722,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.4014595081607222,
+        "event": "rich-hit-cart",
+        "t": 27.633,
+        "x": 168.403,
+        "v": -1.952,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "relativeSpeedMps": 1.0192381561873436,
+        "event": "rich-hit-cart",
+        "t": 27.9,
+        "x": 168.011,
+        "v": -1.129,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 45.39918569780105,
+        "event": "rich-recovered",
+        "t": 27.917,
+        "x": 167.991,
+        "v": -1.067,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 28.083,
+        "x": 167.946,
+        "v": 0.208,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "lost-cart",
+        "t": 32.967,
+        "x": 167.95,
+        "v": 0.136,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 48.17677964592427,
+        "maxSeatDistance": 49.91352635926804,
+        "maxLiftPx": 49.885889428245726,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": true,
+        "outside": 0,
+        "seated": false,
+        "handGrip": true,
+        "seatDistance": 57.625155269957176,
+        "maxSeatDistance": 57.857015490506,
+        "maxLiftPx": 45.39918569780105,
+        "recoveredCount": 2
+      }
+    ],
+    "maxRoll": 3.0113696068223836,
+    "maxLean": 2.2861621478753182,
+    "maxLift": 45.39918569780105,
+    "maxSeat": 57.857015490506,
+    "richGround": 374,
+    "firstAir": 1656,
+    "minAxleDrop": 18.038453437228455,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "rock-rescue",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 398.64098702054514,
+    "v": 0.4574032875852936,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 2,
+      "recoveries": 2,
+      "grabs": 2,
+      "gripBreaks": 0,
+      "peakGripStretch": 2.533594126074112,
+      "peakGripKick": 0.7001892881990204
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 19.98333333333348,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 13.3,
+        "x": 118.682,
+        "v": 0.169,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 19.983,
+        "x": 158.606,
+        "v": 2.813,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 21.2,
+        "x": 159.247,
+        "v": 0.053,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-terrain",
+        "t": 21.8,
+        "x": 159.252,
+        "v": -0.046,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-grabbed-rail",
+        "t": 32.667,
+        "x": 284.132,
+        "v": 15.885,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-left-seat",
+        "t": 32.817,
+        "x": 286.542,
+        "v": 15.767,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-grabbed-rail",
+        "t": 33.05,
+        "x": 290.282,
+        "v": 15.665,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-left-seat",
+        "t": 33.2,
+        "x": 292.639,
+        "v": 15.56,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 21.96807092372421,
+        "event": "driver-recovered",
+        "t": 33.25,
+        "x": 293.412,
+        "v": 14.875,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "liftPx": 10.024306927149679,
+        "event": "rich-recovered",
+        "t": 33.367,
+        "x": 295.156,
+        "v": 14.216,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "rich-released-rail",
+        "t": 33.817,
+        "x": 300.921,
+        "v": 11.455,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "driver-released-rail",
+        "t": 33.867,
+        "x": 301.504,
+        "v": 10.834,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 39.8,
+        "x": 334.007,
+        "v": 11.803,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 47.2,
+        "x": 398.641,
+        "v": 0.457,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 10.239021140954666,
+        "maxSeatDistance": 27.952792504398975,
+        "maxLiftPx": 21.96807092372421,
+        "recoveredCount": 1
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 7.305627348573514,
+        "maxSeatDistance": 15.034314814930909,
+        "maxLiftPx": 10.024306927149679,
+        "recoveredCount": 1
+      }
+    ],
+    "maxRoll": 0.565271749908763,
+    "maxLean": 0.9255902650907009,
+    "maxLift": 10.024306927149679,
+    "maxSeat": 15.034314814930909,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 15.850755317980713,
+    "mirrorFrames": 0
+  },
+  {
+    "id": "ball-save",
+    "outcome": "WIN",
+    "state": "WIN",
+    "x": 399.2758911417879,
+    "v": 0.14945884974804358,
+    "people": 2,
+    "pickups": 1,
+    "stats": {
+      "departures": 0,
+      "recoveries": 0,
+      "grabs": 0,
+      "gripBreaks": 0
+    },
+    "events": {
+      "ball": "spent",
+      "ballAt": 23.383333333333287,
+      "goosePreviewed": true
+    },
+    "logs": [
+      {
+        "event": "start",
+        "t": 0,
+        "x": 0,
+        "v": 0,
+        "people": 1,
+        "seed": 1
+      },
+      {
+        "event": "pickup-1",
+        "t": 17.35,
+        "x": 118.646,
+        "v": 0.348,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-warning",
+        "t": 23.383,
+        "x": 158.7,
+        "v": 7.746,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-launched",
+        "t": 24.6,
+        "x": 168.247,
+        "v": 7.878,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "ball-impact-cart",
+        "t": 25.15,
+        "x": 172.428,
+        "v": 7.801,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "goose-preview",
+        "t": 51.633,
+        "x": 334.095,
+        "v": 7.771,
+        "people": 2,
+        "seed": 1
+      },
+      {
+        "event": "stage1-complete",
+        "t": 59.717,
+        "x": 399.276,
+        "v": 0.149,
+        "people": 2,
+        "seed": 1
+      }
+    ],
+    "parts": [
+      {
+        "id": "driver",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 18.448214023320496,
+        "maxSeatDistance": 26.132768624316636,
+        "maxLiftPx": 2.2104071969242027,
+        "recoveredCount": 0
+      },
+      {
+        "id": "rich",
+        "grip": false,
+        "outside": 0,
+        "seated": true,
+        "handGrip": false,
+        "seatDistance": 12.119763728577832,
+        "maxSeatDistance": 19.653314016904165,
+        "maxLiftPx": 16.44238859331135,
+        "recoveredCount": 0
+      }
+    ],
+    "maxRoll": 0.5567531029529187,
+    "maxLean": 1.341737780395635,
+    "maxLift": 16.44238859331135,
+    "maxSeat": 19.653314016904165,
+    "richGround": 0,
+    "firstAir": null,
+    "minAxleDrop": 17.597780238164383,
+    "mirrorFrames": 0
+  }
+]

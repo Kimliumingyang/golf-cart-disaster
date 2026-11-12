@@ -1,4 +1,4 @@
-# Golf Cart Disaster V0.8 — 美术需求清单
+# Golf Cart Disaster V0.9 — 美术需求清单
 
 - [ ] **游戏标志** — `ui.logo`，透明 PNG 或 SVG。
 - [ ] **司机 · 整人图 / 自动分片** — `characters.driver`，透明 PNG 或 SVG。
