@@ -10,11 +10,11 @@
   ],
   "driverFrontFacingRight": true,
   "seatLocalXOffsetsM": {
-    "golfer": -2.5,
-    "suit": -1.25,
-    "lady": 0,
-    "rich": 1.25,
-    "driver": 2.5
+    "golfer": -2.275,
+    "suit": -1.375,
+    "lady": -0.475,
+    "rich": 0.425,
+    "driver": 1.325
   },
   "characters": [
     {

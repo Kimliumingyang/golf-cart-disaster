@@ -14,7 +14,7 @@ export function createWorld(g) {
   g.engine.gravity.y=1; g.engine.gravity.scale=.0006;
   g.ground=new Map(); g.people=[]; g.hats=[]; g.balls=[]; g.pendingBallImpacts=[]; g.impacts=[];
   const parts=[Bodies.rectangle(128,-104,7,64,{angle:-.25,label:'windshield strut'}),Bodies.rectangle(0,-42,272,24,{chamfer:{radius:5}}),Bodies.rectangle(-134,-61,8,30),Bodies.rectangle(134,-61,8,30)];
-  for(const x of [-100,-50,0,50,100]) parts.push(Bodies.rectangle(x,-61,34,10),Bodies.rectangle(x-18,-77,7,37,{chamfer:{radius:2}}));
+  for(const x of Object.values(characters.seatLocalXOffsetsM).map(x=>x*40)) parts.push(Bodies.rectangle(x,-46,34,10),Bodies.rectangle(x-18,-62,7,37,{chamfer:{radius:2}}));
   g.car=Body.create({parts,label:'cart',friction:.06,frictionAir:.0007,restitution:.08,collisionFilter:{category:2,mask:0xffff}});
   Body.setMass(g.car,100); g.carOrigin={...g.car.position};
   g.wheels=[-106,106].map(x=>Bodies.circle(x,-16,14,{friction:0,frictionStatic:0,frictionAir:.0005,restitution:.03,label:'wheel',collisionFilter:{category:4,mask:1|16}}));
@@ -28,7 +28,7 @@ export function createWorld(g) {
   // It is a soft physical constraint, not a wheel teleport or a velocity correction.
   g.suspensions.push(...g.wheels.map((w,i)=>Constraint.create({bodyA:g.car,pointA:{x:(i?106:-106)-g.carOrigin.x,y:-72-g.carOrigin.y},bodyB:w,length:56,stiffness:.12,damping:0})));
   Composite.add(g.engine.world,g.suspensions);
-  g.seats={}; for(const [id,x] of Object.entries(characters.seatLocalXOffsetsM)) g.seats[id]={x:x*40-g.carOrigin.x,y:-75-g.carOrigin.y};
+  g.seats={}; for(const [id,x] of Object.entries(characters.seatLocalXOffsetsM)) g.seats[id]={x:x*40-g.carOrigin.x,y:-60-g.carOrigin.y};
   Events.on(g.engine,'collisionStart',({pairs})=>{
     for(const pair of pairs) {
       const a=pair.bodyA.parent, b=pair.bodyB.parent;
@@ -46,7 +46,7 @@ export function createWorld(g) {
       if(dv>2.4) for(const p of g.people) if(p.parts.some(part=>part===a||part===b)) p.shock=1;
     }
   });
-  g.rails=[-100,-50,0,50,100].map(x=>({x:x+12-g.carOrigin.x,y:-91-g.carOrigin.y}));
+  g.rails=Object.values(characters.seatLocalXOffsetsM).map(x=>({x:x*40+12-g.carOrigin.x,y:-76-g.carOrigin.y}));
   g.rails.push({x:-136-g.carOrigin.x,y:-55-g.carOrigin.y},{x:136-g.carOrigin.x,y:-55-g.carOrigin.y});
   updateGround(g); addPerson(g,'driver');
 }
