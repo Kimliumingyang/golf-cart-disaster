@@ -4,7 +4,7 @@ export const tuning = {
   motorAccelMps2: 5, driveLossCompensation: .35,
   brakeMps2: 5.2, coastMps2: .45,
   uphillAssistMps2: 16, downhillBrakeAssistMps2: 16,
-  maxSpeedMps: 24, reverseSpeedMps: 3.5,
+  maxSpeedMps: 40, reverseSpeedMps: 3.5,
   suspensionStiffness: .14,
   seatStiffness: .018, settleSeconds: 1.0,
   poseGain: .03, poseDamping: .14, poseMaxAcceleration: .015,
